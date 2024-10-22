@@ -1,17 +1,7 @@
-{% comment %} {{ 'section-heri.css' | asset_url | stylesheet_tag }} {% endcomment %}
+{{ 'section-hero.css' | asset_url | stylesheet_tag }}
 
-{% for block in section.blocks %}  
-  {% case block.type %}
 
-    {% when 'heading' %}  
-      <div class="link" {{ block.shopify_attributes }}>   
-        {{ block.settings.heading }}
-      </div> 
 
-  {% endcase %} 
-{% endfor %}
-
-weffeter
 {% schema %}
 {
   "name": "Hero",
@@ -25,11 +15,11 @@ weffeter
       "type": "image_picker",
       "id": "image",
       "label": "Image"
-    },
+    }
   ],
   "presets": [
     {
-      "name": "Hero",
+      "name": "Hero"
     }
   ]
 }

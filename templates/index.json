@@ -62,10 +62,18 @@
             "heading": "Image banner",
             "heading_size": "h1"
           }
+        },
+        "text_6xBWfW": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
-        "heading_9zkwkD"
+        "heading_9zkwkD",
+        "text_6xBWfW"
       ],
       "settings": {
         "show_text_box": true,

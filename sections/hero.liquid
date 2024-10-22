@@ -1,26 +1,55 @@
 {{ 'section-hero.css' | asset_url | stylesheet_tag }}
 
-
+<section class="hero">
+  <img src="img/hero.jpg" alt="hero" class="hero__img">
+  <div class="hero__container container">
+    <h2 class="hero__title">Throw the Ultimate <br> Birthday Party with Ease</h2>
+    <div class="text hero__text">
+      <p>Get the step-by-step guide that saves time and takes the stress out of party planning for just $19.99!</p>
+    </div>
+    <a href="#" class="hero__btn btn-light">Get Your Guide Now!</a>
+  </div>
+</section>
 
 {% schema %}
 {
-  "name": "Hero",
-  "tag": "section",
-  "class": "section",
-  "disabled_on": {
-    "groups": ["header", "footer"]
-  },
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Hero"
-    }
-  ]
+"name": "Hero",
+"tag": "section",
+"class": "section",
+"disabled_on": {
+"groups": ["header", "footer"]
+},
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Title"
+},
+{
+"type": "rich_editor",
+"id": "text",
+"label": "Text"
+},
+{
+"type": "text",
+"id": "button_text",
+"label": "Button text"
+},
+{
+"type": "text",
+"id": "button_link",
+"label": "Button Link"
+},
+],
+"presets": [
+{
+"name": "Hero"
+}
+]
 }
 {% endschema %}

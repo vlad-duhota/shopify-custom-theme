@@ -1,5 +1,15 @@
-{{ 'section-heri.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'section-heri.css' | asset_url | stylesheet_tag }} {% endcomment %}
 
+{% for block in section.blocks %}  
+  {% case block.type %}
+
+    {% when 'heading' %}  
+      <div class="link" {{ block.shopify_attributes }}>   
+        {{ block.settings.heading }}
+      </div> 
+
+  {% endcase %} 
+{% endfor %}
 
 
 {% schema %}

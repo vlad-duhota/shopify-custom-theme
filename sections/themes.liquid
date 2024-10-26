@@ -68,3 +68,54 @@
         </div>
     </div>
 </section>
+
+
+{% schema %}
+    {
+    "name": "Themes",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+    "groups": ["header", "footer"]
+    },
+    "settings": [
+    {
+    "type": "text",
+    "id": "title",
+    "label": "Title"
+    },
+    ],
+    "presets": [
+    {
+    "name": "Themes",
+    "settings": {
+      
+    }
+    }
+    ],
+    "blocks": [
+        {
+            "type": "slide",
+            "name": "Slide",
+            "settings": [
+                {
+                    "id": "text",
+                    "type": "text",
+                    "label": "Item Text"
+                },
+                {
+                    "id": "link",
+                    "type": "url",
+                    "label": "Item Link"
+                }
+            ]
+        },
+    ],
+    "presets": [
+        {
+            "name": "Inside",
+            "category": "Custom"
+        }
+    ]
+    }
+    {% endschema %}

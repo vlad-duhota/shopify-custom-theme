@@ -12,7 +12,7 @@
                     {% case block.type %}
                   
                       {% when 'item' %}  
-                        <div class="swiper-slide" data-popup="0" {{ block.shopify_attributes }}>
+                        <div class="swiper-slide" data-popup="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
                             {{ block.settings.image | image_url: width: 1500 | image_tag:
                             width: block.settings.image.width,
                             alt: block.settings.image.alt | escape }} 
@@ -40,6 +40,18 @@
     </div>
 </section>
 
+{% for block in section.blocks %}  
+    {% case block.type %}
+  
+      {% when 'item' %}  
+        <div class="swiper-slide" data-popup="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
+            {{ block.settings.image | image_url: width: 1500 | image_tag:
+            width: block.settings.image.width,
+            alt: block.settings.image.alt | escape }} 
+            <h3>{{ block.settings.text }}</h3>
+        </div>
+    {% endcase %} 
+{% endfor %}
 
 {% schema %}
     {

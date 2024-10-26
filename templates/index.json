@@ -12,15 +12,25 @@
     "hero_fyDXD4": {
       "type": "hero",
       "settings": {
-        "image": "shopify://shop_images/IMG_1877_5475d5c1-5e58-4772-9a60-248e3a1ccc2f.jpg",
+        "image": "shopify://shop_images/PXL_20240601_193859654.jpg",
         "title": "Throw the Ultimate <br> Birthday Party with Ease",
         "textw": "<p>Get the step-by-step guide that saves time and takes the stress out of party planning for just $19.99!</p>",
         "button_text": "GET YOUR GUIDE NOW!",
         "button_link": ""
       }
+    },
+    "hero_q9m3h3": {
+      "type": "hero",
+      "settings": {
+        "title": "",
+        "textw": "",
+        "button_text": "",
+        "button_link": ""
+      }
     }
   },
   "order": [
-    "hero_fyDXD4"
+    "hero_fyDXD4",
+    "hero_q9m3h3"
   ]
 }

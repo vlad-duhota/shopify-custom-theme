@@ -8,47 +8,18 @@
 
         <div class="themes__swiper swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" data-popup="0">
-                    <img src="/img/theme.jpg" alt="">
-                    <h3>First Trip Around the sun</h3>
-                </div>
-                <div class="swiper-slide" data-popup="0">
-                    <img src="/img/theme.jpg" alt="">
-                    <h3>First Trip Around the sun</h3>
-                </div>
-                <div class="swiper-slide" data-popup="1">
-                    <img src="/img/theme.jpg" alt="">
-                    <h3>First Trip Around the sun</h3>
-                </div>
-                <div class="swiper-slide" data-popup="2">
-                    <img src="/img/theme.jpg" alt="">
-                    <h3>First Trip Around the sun</h3>
-                </div>
-                <div class="swiper-slide" data-popup="3">
-                    <img src="/img/theme.jpg" alt="">
-                    <h3>First Trip Around the sun</h3>
-                </div>
-                <div class="swiper-slide" data-popup="4">
-                    <img src="/img/theme.jpg" alt="">
-                    <h3>First Trip Around the sun</h3>
-                </div>
-                <div class="swiper-slide" data-popup="5">
-                    <img src="/img/theme.jpg" alt="">
-                    <h3>First Trip Around the sun</h3>
-                </div>
-                <div class="swiper-slide" data-popup="6">
-                    <img src="/img/theme.jpg" alt="">
-                    <h3>First Trip Around the sun</h3>
-                </div>
-                <div class="swiper-slide" data-popup="7">
-                    <img src="/img/theme.jpg" alt="">
-                    <h3>First Trip Around the sun</h3>
-                </div>
-                <div class="swiper-slide" data-popup="8">
-                    <img src="/img/theme.jpg" alt="">
-                    <h3>First Trip Around the sun</h3>
-                </div>
-
+                {% for block in section.blocks %}  
+                    {% case block.type %}
+                  
+                      {% when 'item' %}  
+                        <div class="swiper-slide" data-popup="0" {{ block.shopify_attributes }}>
+                            {{ block.settings.image | image_url: width: 1500 | image_tag:
+                            width: block.settings.image.width,
+                            alt: block.settings.image.alt | escape }} 
+                            <h3>{{ block.settings.text }}</h3>
+                        </div>
+                    {% endcase %} 
+                {% endfor %}
             </div>
         </div>
         <div class="themes__scrollbar"></div>

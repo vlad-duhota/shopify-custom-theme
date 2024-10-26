@@ -44,11 +44,17 @@
     {% case block.type %}
   
       {% when 'item' %}  
-        <div class="swiper-slide" data-popup="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
-            {{ block.settings.image | image_url: width: 1500 | image_tag:
-            width: block.settings.image.width,
-            alt: block.settings.image.alt | escape }} 
-            <h3>{{ block.settings.text }}</h3>
+        <div class="popup" data-popup="{{ forloop.index0 }}">
+            <div class="popup__body">
+                <button class="popup__close">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7.5 7.5M14 14L7.5 7.5M7.5 7.5L14 1L1 14" stroke="#514B46"/>
+                    </svg>  
+                </button>
+                <blockquote class="instagram-media" data-instgrm-version="7" >
+                    <a href="{{ block.settings.insta }}"></a> 
+                </blockquote>
+            </div>
         </div>
     {% endcase %} 
 {% endfor %}

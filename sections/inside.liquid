@@ -9,65 +9,19 @@
             {{ section.settings.text }}
         </div>
         <div class="inside__list">
-            <ul class="inside__item">
-                <li>
-                    <a href="#">
-                        How to Plan an Unforgettable Kids' Birthday Party
-                    </a>
-                </li>
-                <li>
-                    <p>Choosing the Perfect Theme</p>
-                </li>
-                <li>
-                    <p>Crafting the Guest List and Sending Invitations</p>
-                </li>
-                <li>
-                    <p>Planning the Perfect Venue</p>
-                </li>
-                <li>
-                    <p>Crafting the Ultimate Party Timeline</p>
-                </li>
-                <li>
-                    <p>Party Decorations That Wow</p>
-                </li>
-            </ul>
-            <ul class="inside__item">
-                <li>
-                    <p>Entertainment Ideas for All Ages</p>
-                </li>
-                <li>
-                    <p>Activities and Considerations for Siblings</p>
-                </li>
-                <li>
-                    <p>How to Capture Party Moments: Photography Tips for Parents</p>
-                </li>
-                <li>
-                    <p>Contingency Plans for Unexpected Weather</p>
-                </li>
-                <li>
-                    <p>Safety and Insurance Considerations</p>
-                </li>
-                <li>
-                    <p>Social Media Tips and Hashtags to Make Your Party Memorable</p>
-                </li>
-            </ul>
-            <ul class="inside__item">
-                <li>
-                    <p>Featuring Rentals from Party Baby Seattle</p>
-                </li>
-                <li>
-                    <p>Post-Party Tips: Clean-Up and Thank You Notes</p>
-                </li>
-                <li>
-                    <p>Top Healthy Snack Recipes for Toddler Birthday Parties</p>
-                </li>
-                <li>
-                    <p>Additional Resources and Vendor Recommendations</p>
-                </li>
-                <li>
-                    <p>Conclusion: Making Memories That Last</p>
-                </li>
-            </ul>
+            {% for block in section.blocks %}
+                <ul class="inside__item">
+                    {% for item in block.settings.items %}
+                        <li>
+                            {% if item.link %}
+                                <a href="{{ item.link }}">{{ item.text }}</a>
+                            {% else %}
+                                <p>{{ item.text }}</p>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
         </div>
         <a href="#" class="inside__btn btn-primary">Buy now</a>
     </div>
@@ -105,18 +59,38 @@
     ],
     "blocks": [
         {
-            {
-            "type": "item",
-            "name": "List item",
+            "type": "list",
+            "name": "List Block",
             "settings": [
                 {
-                "id": "text",
-                "type": "richtext",
-                "label": "Text"
+                    "type": "list",
+                    "id": "items",
+                    "label": "List Items",
+                    "default": [
+                        {
+                            "text": "Default Item 1",
+                            "link": "#"
+                        },
+                        {
+                            "text": "Default Item 2",
+                            "link": ""
+                        }
+                    ],
+                    "options": [
+                        {
+                            "id": "text",
+                            "type": "text",
+                            "label": "Item Text"
+                        },
+                        {
+                            "id": "link",
+                            "type": "url",
+                            "label": "Item Link"
+                        }
+                    ]
                 }
             ]
-            },
         }
-    ]
+    ],
     }
     {% endschema %}

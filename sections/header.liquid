@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="{{ 'header.css' | asset_url }}" media="print" onload="this.media='all'">
    <header class="header">
         <div class="header__container container">
-          {{ section.settings.image | image_url: width: 1500 | image_tag:
+          {{ section.settings.logo | image_url: width: 1500 | image_tag:
           loading: 'lazy',
           width: section.settings.image.width,
           widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-          alt: section.settings.image.alt | escape }}
+          alt: section.settings.logo.alt | escape }}
 
             <a href="{{section.settings.button_link}}" class="header__btn btn-primary">
               {{section.settings.button_text}}

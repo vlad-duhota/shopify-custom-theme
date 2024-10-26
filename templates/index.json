@@ -205,6 +205,14 @@
     "themes_77KaFc": {
       "type": "themes",
       "blocks": {
+        "slide_F8zPT3": {
+          "type": "slide",
+          "settings": {
+            "text": "Sesame Street",
+            "image": "shopify://shop_images/image_8.jpg",
+            "insta": "https://www.instagram.com/p/BT8cmZRlkVJ/"
+          }
+        },
         "slide_rwfqbK": {
           "type": "slide",
           "settings": {
@@ -260,32 +268,17 @@
             "image": "shopify://shop_images/image_7.jpg",
             "insta": "https://www.instagram.com/p/BT8cmZRlkVJ/"
           }
-        },
-        "slide_F8zPT3": {
-          "type": "slide",
-          "settings": {
-            "text": "",
-            "insta": ""
-          }
-        },
-        "slide_DMjWXb": {
-          "type": "slide",
-          "settings": {
-            "text": "",
-            "insta": ""
-          }
         }
       },
       "block_order": [
+        "slide_F8zPT3",
         "slide_rwfqbK",
         "slide_RVepmp",
         "slide_3NfFeK",
         "slide_FdD7KN",
         "slide_dpKYVH",
         "slide_YD3QjE",
-        "slide_P4CJFy",
-        "slide_F8zPT3",
-        "slide_DMjWXb"
+        "slide_P4CJFy"
       ],
       "settings": {
         "title": ""

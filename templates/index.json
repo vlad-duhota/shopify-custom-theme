@@ -18,19 +18,9 @@
         "button_text": "GET YOUR GUIDE NOW!",
         "button_link": ""
       }
-    },
-    "hero_q9m3h3": {
-      "type": "hero",
-      "settings": {
-        "title": "",
-        "textw": "",
-        "button_text": "",
-        "button_link": ""
-      }
     }
   },
   "order": [
-    "hero_fyDXD4",
-    "hero_q9m3h3"
+    "hero_fyDXD4"
   ]
 }

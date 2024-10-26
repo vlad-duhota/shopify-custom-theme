@@ -9,21 +9,47 @@
             {{ section.settings.text }}
         </div>
         <div class="inside__list">
-            {% for block in section.blocks %}
-                <ul class="inside__item">
-                    {% for item in block.settings.items %}
+            <ul class="inside__item">
+                {% for block in section.blocks %}
+                    {% if block.type == 'list_1_item' %}
                         <li>
-                            {% if item.link %}
-                                <a href="{{ item.link }}">{{ item.text }}</a>
+                            {% if block.settings.link %}
+                                <a href="{{ block.settings.link }}">{{ block.settings.text }}</a>
                             {% else %}
-                                <p>{{ item.text }}</p>
+                                <p>{{ block.settings.text }}</p>
                             {% endif %}
                         </li>
-                    {% endfor %}
-                </ul>
-            {% endfor %}
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul class="inside__item">
+                {% for block in section.blocks %}
+                    {% if block.type == 'list_2_item' %}
+                        <li>
+                            {% if block.settings.link %}
+                                <a href="{{ block.settings.link }}">{{ block.settings.text }}</a>
+                            {% else %}
+                                <p>{{ block.settings.text }}</p>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul class="inside__item">
+                {% for block in section.blocks %}
+                    {% if block.type == 'list_3_item' %}
+                        <li>
+                            {% if block.settings.link %}
+                                <a href="{{ block.settings.link }}">{{ block.settings.text }}</a>
+                            {% else %}
+                                <p>{{ block.settings.text }}</p>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         </div>
-        <a href="#" class="inside__btn btn-primary">Buy now</a>
+        <a href="{{ section.settings.button_link }}" class="inside__btn btn-primary">{{ section.settings.button_text }}</a>
     </div>
 </section>
 
@@ -48,6 +74,16 @@
     "id": "text",
     "label": "Text"
     },
+    {
+    "type": "text",
+    "id": "button_text",
+    "label": "Button text"
+    },
+    {
+    "type": "text",
+    "id": "button_link",
+    "label": "Button Link"
+    },
     ],
     "presets": [
     {
@@ -59,38 +95,59 @@
     ],
     "blocks": [
         {
-            "type": "list",
-            "name": "List Block",
+            "type": "list_1_item",
+            "name": "List 1 Item",
             "settings": [
                 {
-                    "type": "list",
-                    "id": "items",
-                    "label": "List Items",
-                    "default": [
-                        {
-                            "text": "Default Item 1",
-                            "link": "#"
-                        },
-                        {
-                            "text": "Default Item 2",
-                            "link": ""
-                        }
-                    ],
-                    "options": [
-                        {
-                            "id": "text",
-                            "type": "text",
-                            "label": "Item Text"
-                        },
-                        {
-                            "id": "link",
-                            "type": "url",
-                            "label": "Item Link"
-                        }
-                    ]
+                    "id": "text",
+                    "type": "text",
+                    "label": "Item Text"
+                },
+                {
+                    "id": "link",
+                    "type": "url",
+                    "label": "Item Link"
+                }
+            ]
+        },
+        {
+            "type": "list_2_item",
+            "name": "List 2 Item",
+            "settings": [
+                {
+                    "id": "text",
+                    "type": "text",
+                    "label": "Item Text"
+                },
+                {
+                    "id": "link",
+                    "type": "url",
+                    "label": "Item Link"
+                }
+            ]
+        },
+        {
+            "type": "list_3_item",
+            "name": "List 3 Item",
+            "settings": [
+                {
+                    "id": "text",
+                    "type": "text",
+                    "label": "Item Text"
+                },
+                {
+                    "id": "link",
+                    "type": "url",
+                    "label": "Item Link"
                 }
             ]
         }
     ],
+    "presets": [
+        {
+            "name": "Inside",
+            "category": "Custom"
+        }
+    ]
     }
     {% endschema %}

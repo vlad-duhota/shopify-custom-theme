@@ -72,3 +72,55 @@
         <a href="#" class="inside__btn btn-primary">Buy now</a>
     </div>
 </section>
+
+
+{% schema %}
+    {
+    "name": "Inside",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+    "groups": ["header", "footer"]
+    },
+    "settings": [
+    {
+    "type": "text",
+    "id": "title",
+    "label": "Title"
+    },
+    ],
+    "presets": [
+    {
+    "name": "Inside",
+    "settings": {
+      
+    }
+    }
+    ],
+    "blocks": [
+        {
+            {
+            "type": "item",
+            "name": "List item",
+            "settings": [
+                {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+                },
+                {
+                "id": "title",
+                "type": "text",
+                "label": "Title"
+                },
+                {
+                "id": "text",
+                "type": "richtext",
+                "label": "Text"
+                }
+            ]
+            },
+        }
+    ]
+    }
+    {% endschema %}

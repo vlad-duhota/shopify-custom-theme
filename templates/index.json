@@ -25,6 +25,7 @@
         "item_piddtz": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/guide-1.svg",
             "title": "Easy to Follow Steps",
             "text": "<p>Our guide breaks down the planning process into simple, actionable steps that anyone can follow</p>"
           }
@@ -32,6 +33,7 @@
         "item_ymHAcD": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/guide-2.svg",
             "title": "Stress-Free Planning",
             "text": "<p>Avoid last-minute stress with our guide and enjoy the celebration alongside your child.</p>"
           }
@@ -39,6 +41,7 @@
         "item_tcdfi8": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/guide-3.svg",
             "title": "Creative Party Themes",
             "text": "<p>Get inspired with a variety of unique themes tailored to different age groups and styles.</p>"
           }

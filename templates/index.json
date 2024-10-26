@@ -9,85 +9,18 @@
  */
 {
   "sections": {
-    "image_banner_XpWCCV": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_DNWfaU": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_FmPfgB": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_eBdPjM": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_DNWfaU",
-        "text_FmPfgB",
-        "buttons_eBdPjM"
-      ],
+    "hero_fyDXD4": {
+      "type": "hero",
       "settings": {
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "image_banner_LAY6LC": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_9zkwkD": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_6xBWfW": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_9zkwkD",
-        "text_6xBWfW"
-      ],
-      "settings": {
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "image": "shopify://shop_images/IMG_1877_5475d5c1-5e58-4772-9a60-248e3a1ccc2f.jpg",
+        "title": "Title",
+        "textw": "<p>Get the step-by-step guide that saves time and takes the stress out of party planning for just $19.99!</p>",
+        "button_text": "GET YOUR GUIDE NOW!",
+        "button_link": ""
       }
     }
   },
   "order": [
-    "image_banner_XpWCCV",
-    "image_banner_LAY6LC"
+    "hero_fyDXD4"
   ]
 }

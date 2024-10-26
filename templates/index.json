@@ -18,9 +18,313 @@
         "button_text": "GET YOUR GUIDE NOW!",
         "button_link": ""
       }
+    },
+    "guide_Nk7nYw": {
+      "type": "guide",
+      "blocks": {
+        "item_piddtz": {
+          "type": "item",
+          "settings": {
+            "title": "Easy to Follow Steps",
+            "text": "<p>Our guide breaks down the planning process into simple, actionable steps that anyone can follow</p>"
+          }
+        },
+        "item_ymHAcD": {
+          "type": "item",
+          "settings": {
+            "title": "Stress-Free Planning",
+            "text": "<p>Avoid last-minute stress with our guide and enjoy the celebration alongside your child.</p>"
+          }
+        },
+        "item_tcdfi8": {
+          "type": "item",
+          "settings": {
+            "title": "Creative Party Themes",
+            "text": "<p>Get inspired with a variety of unique themes tailored to different age groups and styles.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_piddtz",
+        "item_ymHAcD",
+        "item_tcdfi8"
+      ],
+      "settings": {
+        "title": "Why Choose  Our Party Planning Guide?"
+      }
+    },
+    "inside_UfFK7g": {
+      "type": "inside",
+      "blocks": {
+        "list_1_item_zEreB9": {
+          "type": "list_1_item",
+          "settings": {
+            "text": "How to Plan an Unforgettable Kids' Birthday Party",
+            "link": "https://google.com"
+          }
+        },
+        "list_1_item_eFJbDg": {
+          "type": "list_1_item",
+          "settings": {
+            "text": "Choosing the Perfect Theme",
+            "link": ""
+          }
+        },
+        "list_1_item_EfM9Ap": {
+          "type": "list_1_item",
+          "settings": {
+            "text": "Crafting the Guest List and Sending Invitations",
+            "link": ""
+          }
+        },
+        "list_1_item_kKeRGc": {
+          "type": "list_1_item",
+          "settings": {
+            "text": "Planning the Perfect Venue",
+            "link": ""
+          }
+        },
+        "list_1_item_GM8mcj": {
+          "type": "list_1_item",
+          "settings": {
+            "text": "Crafting the Ultimate Party Timeline",
+            "link": ""
+          }
+        },
+        "list_1_item_kUrV3D": {
+          "type": "list_1_item",
+          "settings": {
+            "text": "Party Decorations That Wow",
+            "link": ""
+          }
+        },
+        "list_2_item_ty6Edd": {
+          "type": "list_2_item",
+          "settings": {
+            "text": "Entertainment Ideas for All Ages",
+            "link": ""
+          }
+        },
+        "list_2_item_x4pEfd": {
+          "type": "list_2_item",
+          "settings": {
+            "text": "Activities and Considerations for Siblings",
+            "link": ""
+          }
+        },
+        "list_2_item_LRK68A": {
+          "type": "list_2_item",
+          "settings": {
+            "text": "How to Capture Party Moments: Photography Tips for Parents",
+            "link": ""
+          }
+        },
+        "list_2_item_BBYAB7": {
+          "type": "list_2_item",
+          "settings": {
+            "text": "Contingency Plans for Unexpected Weather",
+            "link": ""
+          }
+        },
+        "list_2_item_k8W8t9": {
+          "type": "list_2_item",
+          "settings": {
+            "text": "Safety and Insurance Considerations",
+            "link": ""
+          }
+        },
+        "list_2_item_eWpFVG": {
+          "type": "list_2_item",
+          "settings": {
+            "text": "Social Media Tips and Hashtags to Make Your Party Memorable",
+            "link": ""
+          }
+        },
+        "list_3_item_kiiKmM": {
+          "type": "list_3_item",
+          "settings": {
+            "text": "Featuring Rentals from Party Baby Seattle",
+            "link": ""
+          }
+        },
+        "list_3_item_fFaBYW": {
+          "type": "list_3_item",
+          "settings": {
+            "text": "Post-Party Tips: Clean-Up and Thank You Notes",
+            "link": ""
+          }
+        },
+        "list_3_item_Gd9m4e": {
+          "type": "list_3_item",
+          "settings": {
+            "text": "Top Healthy Snack Recipes for Toddler Birthday Parties",
+            "link": ""
+          }
+        },
+        "list_3_item_jbCC7B": {
+          "type": "list_3_item",
+          "settings": {
+            "text": "Additional Resources and Vendor Recommendations",
+            "link": ""
+          }
+        },
+        "list_3_item_rngeJH": {
+          "type": "list_3_item",
+          "settings": {
+            "text": "Conclusion: Making Memories That Last",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "list_1_item_zEreB9",
+        "list_1_item_eFJbDg",
+        "list_1_item_EfM9Ap",
+        "list_1_item_kKeRGc",
+        "list_1_item_GM8mcj",
+        "list_1_item_kUrV3D",
+        "list_2_item_ty6Edd",
+        "list_2_item_x4pEfd",
+        "list_2_item_LRK68A",
+        "list_2_item_BBYAB7",
+        "list_2_item_k8W8t9",
+        "list_2_item_eWpFVG",
+        "list_3_item_kiiKmM",
+        "list_3_item_fFaBYW",
+        "list_3_item_Gd9m4e",
+        "list_3_item_jbCC7B",
+        "list_3_item_rngeJH"
+      ],
+      "settings": {
+        "title": "What’s Inside the Guide?",
+        "text": "<p>Discover how our guide covers every step of the party planning process with helpful tips, templates, and insights.</p>",
+        "button_text": "Buy now",
+        "button_link": ""
+      }
+    },
+    "themes_77KaFc": {
+      "type": "themes",
+      "blocks": {
+        "slide_rwfqbK": {
+          "type": "slide",
+          "settings": {
+            "text": "Rainbow",
+            "image": "shopify://shop_images/eb6ba34dd3d8bd1aa250f78466573cc3.jpg",
+            "insta": "https://www.instagram.com/p/BT8cmZRlkVJ/"
+          }
+        },
+        "slide_RVepmp": {
+          "type": "slide",
+          "settings": {
+            "text": "",
+            "insta": ""
+          }
+        },
+        "slide_3NfFeK": {
+          "type": "slide",
+          "settings": {
+            "text": "",
+            "insta": ""
+          }
+        },
+        "slide_FdD7KN": {
+          "type": "slide",
+          "settings": {
+            "text": "",
+            "insta": ""
+          }
+        },
+        "slide_dpKYVH": {
+          "type": "slide",
+          "settings": {
+            "text": "",
+            "insta": ""
+          }
+        },
+        "slide_YD3QjE": {
+          "type": "slide",
+          "settings": {
+            "text": "",
+            "insta": ""
+          }
+        },
+        "slide_P4CJFy": {
+          "type": "slide",
+          "settings": {
+            "text": "",
+            "insta": ""
+          }
+        },
+        "slide_F8zPT3": {
+          "type": "slide",
+          "settings": {
+            "text": "",
+            "insta": ""
+          }
+        },
+        "slide_DMjWXb": {
+          "type": "slide",
+          "settings": {
+            "text": "",
+            "insta": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_rwfqbK",
+        "slide_RVepmp",
+        "slide_3NfFeK",
+        "slide_FdD7KN",
+        "slide_dpKYVH",
+        "slide_YD3QjE",
+        "slide_P4CJFy",
+        "slide_F8zPT3",
+        "slide_DMjWXb"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "trips_cDdnYx": {
+      "type": "trips",
+      "blocks": {
+        "item_rJEJNF": {
+          "type": "item",
+          "settings": {
+            "text": "1st tip",
+            "image": "shopify://shop_images/d0e081cf0953fcbdb0a0ab16b7fd4d9e.jpg"
+          }
+        },
+        "item_cKHGJf": {
+          "type": "item",
+          "settings": {
+            "text": "2nd tip",
+            "image": "shopify://shop_images/d0e081cf0953fcbdb0a0ab16b7fd4d9e.jpg"
+          }
+        },
+        "item_fUDXet": {
+          "type": "item",
+          "settings": {
+            "text": "3rd tip",
+            "image": "shopify://shop_images/d0e081cf0953fcbdb0a0ab16b7fd4d9e.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_rJEJNF",
+        "item_cKHGJf",
+        "item_fUDXet"
+      ],
+      "settings": {
+        "title": "Actual tips from the guide"
+      }
     }
   },
   "order": [
-    "hero_fyDXD4"
+    "hero_fyDXD4",
+    "guide_Nk7nYw",
+    "inside_UfFK7g",
+    "themes_77KaFc",
+    "trips_cDdnYx"
   ]
 }

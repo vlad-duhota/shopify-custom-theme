@@ -3,10 +3,10 @@
 <section class="inside">
     <div class="container container__inside">
         <h2 class="inside__title">
-            What’s Inside the Guide?
+            {{ section.settings.title }}
         </h2>
         <div class="inside__text">
-            <p>Discover how our guide covers every step of the party planning process with helpful tips, templates, and insights.</p>
+            {{ section.settings.text }}
         </div>
         <div class="inside__list">
             <ul class="inside__item">
@@ -88,6 +88,12 @@
     "id": "title",
     "label": "Title"
     },
+
+    {
+    "type": "richtext",
+    "id": "text",
+    "label": "Text"
+    },
     ],
     "presets": [
     {
@@ -103,16 +109,6 @@
             "type": "item",
             "name": "List item",
             "settings": [
-                {
-                "type": "image_picker",
-                "id": "image",
-                "label": "Image"
-                },
-                {
-                "id": "title",
-                "type": "text",
-                "label": "Title"
-                },
                 {
                 "id": "text",
                 "type": "richtext",

@@ -9,6 +9,12 @@
     padding: 17px 0
 }
 
+.header img {
+    display: block;
+    width: 87px;
+    height: auto;
+}
+
 @media(max-width: 768px) {
     .header {
         padding: 10px 0

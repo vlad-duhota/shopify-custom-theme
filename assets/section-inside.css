@@ -1,0 +1,139 @@
+
+.inside {
+    padding: 120px 0;
+    text-align: center
+  }
+  
+  @media(max-width: 1099px) {
+    .inside {
+      padding: 75px 0
+    }
+  }
+  
+  .inside__title {
+    text-align: center;
+    max-width: 466px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 34px 20px;
+    font-size: 32px;
+    color: #514b46
+  }
+  
+  .inside__title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #acacac;
+    left: 0;
+    bottom: 0
+  }
+  
+  @media(max-width: 576px) {
+    .inside__title {
+      font-size: 26px
+    }
+  }
+  
+  .inside__text {
+    text-align: center;
+    margin: 35px auto 0;
+    max-width: 613px;
+    font-size: 20px
+  }
+  
+  @media(max-width: 1099px) {
+    .inside__text {
+      font-size: 16px
+    }
+  }
+  
+  .inside__list {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 35px;
+    gap: 27px
+  }
+  
+  @media(max-width: 1099px) {
+    .inside__list {
+      grid-template-columns: repeat(2, 1fr)
+    }
+  }
+  
+  @media(max-width: 768px) {
+    .inside__list {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-top: 20px
+    }
+  }
+  
+  .inside__item {
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+  }
+  
+  @media(max-width: 1099px) {
+    .inside__item {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px
+    }
+  
+    .inside__item:last-child {
+      grid-column-start: 1;
+      grid-column-end: 3
+    }
+  }
+  
+  @media(max-width: 768px) {
+    .inside__item {
+      gap: 15px
+    }
+  
+    .inside__item:last-child {
+      grid-column-start: 1;
+      grid-column-end: 2
+    }
+  }
+  
+  .inside__item a,
+  .inside__item p {
+    font-weight: 400;
+    text-transform: uppercase
+  }
+  
+  .inside__item a {
+    text-decoration: underline;
+    color: #216f6d
+  }
+  
+  .inside__item li {
+    padding-left: 31px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    position: relative
+  }
+  
+  .inside__item li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid #216f6d
+  }
+  
+  .inside__btn {
+    margin-top: 40px;
+    min-width: 308px
+  }
+  

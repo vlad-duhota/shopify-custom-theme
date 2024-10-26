@@ -216,43 +216,49 @@
         "slide_RVepmp": {
           "type": "slide",
           "settings": {
-            "text": "",
-            "insta": ""
+            "text": "First Trip Around the sun",
+            "image": "shopify://shop_images/image_5.jpg",
+            "insta": "https://www.instagram.com/p/BT8cmZRlkVJ/"
           }
         },
         "slide_3NfFeK": {
           "type": "slide",
           "settings": {
-            "text": "",
-            "insta": ""
+            "text": "Animal Kingdom/Safari",
+            "image": "shopify://shop_images/ed37035c0583917e73acdd927e63dd57.jpg",
+            "insta": "https://www.instagram.com/p/BT8cmZRlkVJ/"
           }
         },
         "slide_FdD7KN": {
           "type": "slide",
           "settings": {
-            "text": "",
-            "insta": ""
+            "text": "Berry",
+            "image": "shopify://shop_images/f4ec37abb44a62b1c9953eb53610be2b.jpg",
+            "insta": "https://www.instagram.com/p/BT8cmZRlkVJ/"
           }
         },
         "slide_dpKYVH": {
           "type": "slide",
           "settings": {
-            "text": "",
-            "insta": ""
+            "text": "Cotton Candy",
+            "image": "shopify://shop_images/image_6.jpg",
+            "insta": "https://www.instagram.com/p/BT8cmZRlkVJ/"
           }
         },
         "slide_YD3QjE": {
           "type": "slide",
           "settings": {
-            "text": "",
-            "insta": ""
+            "text": "Halloween",
+            "image": "shopify://shop_images/08d75eea6aded0238b304b233ee45402.jpg",
+            "insta": "https://www.instagram.com/p/BT8cmZRlkVJ/"
           }
         },
         "slide_P4CJFy": {
           "type": "slide",
           "settings": {
-            "text": "",
-            "insta": ""
+            "text": "Racing / cars",
+            "image": "shopify://shop_images/image_7.jpg",
+            "insta": "https://www.instagram.com/p/BT8cmZRlkVJ/"
           }
         },
         "slide_F8zPT3": {

@@ -1,7 +1,7 @@
 {{ 'section-hero.css' | asset_url | stylesheet_tag }}
 
 <div class="hero">
-  <img src="{{ section.settings.image.image_url }}" alt="hero" class="hero__img">
+  <img src="{{ section.settings.image }}" alt="hero" class="hero__img">
   <div class="hero__container container">
     <h2 class="hero__title">{{ section.settings.title }}</h2>
     <div class="text hero__text">
@@ -9,7 +9,7 @@
     </div>
     <a href="{{section.settings.button_link}}" class="hero__btn btn-light">{{section.settings.button_text}}</a>
   </div>
-</div>we
+</div>
 
 {% schema %}
 {

@@ -1,7 +1,12 @@
 {{ 'section-hero.css' | asset_url | stylesheet_tag }}
 
 <div class="hero">
-  <img src="{{ section.settings.image | asset_url }}" alt="hero" class="hero__img">
+  {{ section.settings.image | image_url: width: 1500 | image_tag:
+  loading: 'lazy',
+  width: section.settings.image.width,
+  class: 'hero__img',
+  widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+  alt: section.settings.image.alt | escape }}
   <div class="hero__container container">
     <h2 class="hero__title">{{ section.settings.title }}</h2>
     <div class="text hero__text">

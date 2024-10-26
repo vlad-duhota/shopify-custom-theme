@@ -8,23 +8,16 @@
             {% for block in section.blocks %}  
                 {% case block.type %}
               
-                  {% when 'slide' %}  
+                  {% when 'item' %}  
                     <li class="trips__item" {{ block.shopify_attributes }}>
-                        {{ block.settings.image | image_url: width: 1500 | image_tag: }}
-                        <div class="trips__item-img"></div>
-                        <h3 class="trips__item-title">1st tip</h3>
+                        {{ block.settings.image | image_url: width: 1500 | image_tag:
+                        width: block.settings.image.width,
+                        class: 'trips__item-img'
+                        alt: block.settings.image.alt | escape }} 
+                        <h3 class="trips__item-title">{{ block.settings.text }}</h3>
                     </li>
                 {% endcase %} 
             {% endfor %}
-        
-            <li class="trips__item">
-                <div class="trips__item-img"></div>
-                <h3 class="trips__item-title">2st tip</h3>
-            </li>
-            <li class="trips__item">
-                <div class="trips__item-img"></div>
-                <h3 class="trips__item-title">3st tip</h3>
-            </li>
         </ul>
     </div>
 </section>

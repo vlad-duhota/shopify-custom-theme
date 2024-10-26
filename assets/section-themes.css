@@ -37,6 +37,7 @@
   }
   
   .themes .swiper-slide {
+    height: auto !important;
     text-align: center;
     cursor: pointer;
     padding: 12px 18px;

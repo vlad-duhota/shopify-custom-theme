@@ -58,6 +58,7 @@ body {
   min-width: 206px;
   text-align: center;
   display: inline-block;
+  line-height: 1;
   border: 2px solid #216f6d;
   color: #216f6d;
   font-weight: 400;

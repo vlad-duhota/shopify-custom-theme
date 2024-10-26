@@ -55,7 +55,8 @@
 
 .hero__title {
     color: #fff;
-    font-size: 64px
+    font-size: 64px;
+    line-height: 110%;
 }
 
 @media(max-width: 768px) {

@@ -12,7 +12,7 @@
                     <li class="trips__item" {{ block.shopify_attributes }}>
                         {{ block.settings.image | image_url: width: 1500 | image_tag:
                         width: block.settings.image.width,
-                        class: 'trips__item-img'
+                        class: 'trips__item-img',
                         alt: block.settings.image.alt | escape }} 
                         <h3 class="trips__item-title">{{ block.settings.text }}</h3>
                     </li>

@@ -2,13 +2,21 @@
 
 <section class="trips">
     <div class="container trips__container">
-        <h2 class="trips__title">Actual tips from the guide</h2>
+        <h2 class="trips__title">{{ section.settings.title }}</h2>
 
         <ul class="trips__list">
-            <li class="trips__item">
-                <div class="trips__item-img"></div>
-                <h3 class="trips__item-title">1st tip</h3>
-            </li>
+            {% for block in section.blocks %}  
+                {% case block.type %}
+              
+                  {% when 'slide' %}  
+                    <li class="trips__item" {{ block.shopify_attributes }}>
+                        {{ block.settings.image | image_url: width: 1500 | image_tag: }}
+                        <div class="trips__item-img"></div>
+                        <h3 class="trips__item-title">1st tip</h3>
+                    </li>
+                {% endcase %} 
+            {% endfor %}
+        
             <li class="trips__item">
                 <div class="trips__item-img"></div>
                 <h3 class="trips__item-title">2st tip</h3>
@@ -47,8 +55,8 @@
     ],
     "blocks": [
         {
-            "type": "slide",
-            "name": "Slide",
+            "type": "item",
+            "name": "Item",
             "settings": [
                 {
                     "id": "text",
@@ -60,11 +68,6 @@
                     "type": "image_picker",
                     "label": "Item image"
                 },
-                {
-                    "id": "insta",
-                    "type": "url",
-                    "label": "Instagram post url"
-                }
             ]
         },
     ],

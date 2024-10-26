@@ -20,3 +20,53 @@
         </ul>
     </div>
 </section>
+
+
+{% schema %}
+    {
+    "name": "Trips",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+    "groups": ["header", "footer"]
+    },
+    "settings": [
+    {
+    "type": "text",
+    "id": "title",
+    "label": "Title"
+    },
+    ],
+    "presets": [
+    {
+    "name": "Trips",
+    "settings": {
+      
+    }
+    }
+    ],
+    "blocks": [
+        {
+            "type": "slide",
+            "name": "Slide",
+            "settings": [
+                {
+                    "id": "text",
+                    "type": "text",
+                    "label": "Item Text"
+                },
+                {
+                    "id": "image",
+                    "type": "image_picker",
+                    "label": "Item image"
+                },
+                {
+                    "id": "insta",
+                    "type": "url",
+                    "label": "Instagram post url"
+                }
+            ]
+        },
+    ],
+    }
+    {% endschema %}

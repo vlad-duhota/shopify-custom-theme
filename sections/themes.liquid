@@ -11,7 +11,7 @@
                 {% for block in section.blocks %}  
                     {% case block.type %}
                   
-                      {% when 'item' %}  
+                      {% when 'slide' %}  
                         <div class="swiper-slide" data-popup="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
                             {{ block.settings.image | image_url: width: 1500 | image_tag:
                             width: block.settings.image.width,
@@ -43,7 +43,7 @@
 {% for block in section.blocks %}  
     {% case block.type %}
   
-      {% when 'item' %}  
+      {% when 'slide' %}  
         <div class="popup" data-popup="{{ forloop.index0 }}">
             <div class="popup__body">
                 <button class="popup__close">
@@ -74,14 +74,6 @@
     "label": "Title"
     },
     ],
-    "presets": [
-    {
-    "name": "Themes",
-    "settings": {
-      
-    }
-    }
-    ],
     "blocks": [
         {
             "type": "slide",
@@ -107,8 +99,7 @@
     ],
     "presets": [
         {
-            "name": "Inside",
-            "category": "Custom"
+            "name": "Themes",
         }
     ]
     }

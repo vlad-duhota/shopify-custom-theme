@@ -1,0 +1,60 @@
+{{ 'section-cta.css' | asset_url | stylesheet_tag }}
+
+<section class="cta">
+    <div class="container cta__container">
+        <div class="cta__inner">
+            <div class="cta__content">
+                <h2 class="cta__title">{{ section.settings.title }}</h2>
+                <a href="{{ section.settings.button_link }}" class="cta__btn btn-outline"> {{ section.settings.button_text }}</a>
+
+            </div>
+            <img src="{{ 'partybaby.svg' | asset_url }}" alt="party baby logo" class="cta__decor">
+            {{ section.settings.image | image_url: width: 1500 | image_tag:
+                width: section.settings.image.width,
+                class: 'cta__img',
+                alt: section.settings.image.alt | escape 
+            }}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+    "name": "Cta",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+    "groups": ["header", "footer"]
+    },
+    "settings": [
+    {
+    "type": "image_picker",
+    "id": "image",
+    "label": "Image"
+    },
+    {
+    "type": "text",
+    "id": "title",
+    "label": "Title"
+    },
+    {
+    "type": "text",
+    "id": "button_text",
+    "label": "Button text"
+    },
+    {
+    "type": "text",
+    "id": "button_link",
+    "label": "Button Link"
+    },
+    ],
+    "presets": [
+    {
+    "name": "Cta",
+    "settings": {
+      
+    }
+    }
+    ]
+    }
+    {% endschema %}

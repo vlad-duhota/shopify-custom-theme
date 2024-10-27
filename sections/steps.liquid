@@ -2,32 +2,28 @@
 
 <div class="steps">
     <div class="container steps__container">
-        <ul class="steps__list">
-            <li class="steps__item">
-                <h2 class="steps__title">{{ section.settings.title }}</h2>
-            </li>
-
+        <h2 class="steps__title">{{ section.settings.title }}</h2>
+        <div class="steps__swiper swiper">
+            <div class="swiper-wrapper">
             {% for block in section.blocks %}  
                 {% case block.type %}
               
                   {% when 'item' %}  
-                    <li class="steps__item" {{ block.shopify_attributes }}>
-                        {{ block.settings.image | image_url: width: 1500 | image_tag:
-                        width: block.settings.image.width,
-                        class: 'steps__item-img',
-                        alt: block.settings.image.alt | escape }} 
+                    <div class="steps__item swiper-slide" {{ block.shopify_attributes }}>
                         <h3 class="steps__item-title">{{ block.settings.title }}</h3>
                         <div class="steps__item-text">
                             {{ block.settings.text }}
                         </div>
-                    </li>
+                            {{ block.settings.image | image_url: width: 1500 | image_tag:
+                            width: block.settings.image.width,
+                            class: 'steps__item-img',
+                            alt: block.settings.image.alt | escape }} 
+                    </div>
                 {% endcase %} 
             {% endfor %}
 
-            <li class="steps__item">
-                <a href="{{ section.settings.button_link }}" class="steps__item-btn btn-primary">{{ section.settings.button_text }}</a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -36,7 +32,6 @@
     "name": "Steps",
     "tag": "section",
     "class": "section",
-    "max_blocks": 7,
     "disabled_on": {
     "groups": ["header", "footer"]
     },
@@ -45,16 +40,6 @@
     "type": "text",
     "id": "title",
     "label": "Title"
-    },
-    {
-    "type": "text",
-    "id": "button_text",
-    "label": "Button text"
-    },
-    {
-    "type": "text",
-    "id": "button_link",
-    "label": "Button Link"
     },
     ],
     "blocks": [

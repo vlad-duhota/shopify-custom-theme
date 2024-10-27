@@ -1,6 +1,6 @@
 {{ 'section-trips.css' | asset_url | stylesheet_tag }}
 
-<section class="trips">
+<div class="trips">
     <div class="container trips__container">
         <h2 class="trips__title">{{ section.settings.title }}</h2>
 
@@ -20,7 +20,7 @@
             {% endfor %}
         </ul>
     </div>
-</section>
+</div>
 
 
 {% schema %}

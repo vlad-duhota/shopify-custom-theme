@@ -1,6 +1,6 @@
 {{ 'section-steps.css' | asset_url | stylesheet_tag }}
 
-<section class="steps">
+<div class="steps">
     <div class="container steps__container">
         <ul class="steps__list">
             <li class="steps__item">
@@ -12,5 +12,50 @@
             </li>
         </ul>
     </div>
-</section>
+</div>
 
+{% schema %}
+    {
+    "name": "Steps",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+    "groups": ["header", "footer"]
+    },
+    "settings": [
+    {
+    "type": "text",
+    "id": "title",
+    "label": "Title"
+    },
+    ],
+    "blocks": [
+        {
+            "type": "slide",
+            "name": "Slide",
+            "settings": [
+                {
+                    "id": "text",
+                    "type": "text",
+                    "label": "Item Text"
+                },
+                {
+                    "id": "image",
+                    "type": "image_picker",
+                    "label": "Item image"
+                },
+                {
+                    "id": "insta",
+                    "type": "url",
+                    "label": "Instagram post url"
+                }
+            ]
+        },
+    ],
+    "presets": [
+        {
+            "name": "Steps",
+        }
+    ]
+    }
+    {% endschema %}

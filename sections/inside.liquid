@@ -1,6 +1,6 @@
 {{ 'section-inside.css' | asset_url | stylesheet_tag }}
 
-<section class="inside">
+<div class="inside">
     <div class="container container__inside">
         <h2 class="inside__title">
             {{ section.settings.title }}
@@ -51,7 +51,7 @@
         </div>
         <a href="{{ section.settings.button_link }}" class="inside__btn btn-primary">{{ section.settings.button_text }}</a>
     </div>
-</section>
+</div>
 
 
 {% schema %}

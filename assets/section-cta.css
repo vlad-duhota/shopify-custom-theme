@@ -4,6 +4,11 @@
     padding-top: 120px;
 }
 
+.cta__title {
+    color: #fff;
+    font-size: 32px;
+}
+
 .cta__inner {
     background: #216F6D;
     padding: 86px 80px;

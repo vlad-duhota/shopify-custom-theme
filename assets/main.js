@@ -47,3 +47,28 @@ popups.forEach(popup => {
         popup.classList.remove('active')
     })
 })
+
+const stepsSwiper = new Swiper('.steps__swiper', {
+           
+    scrollbar: {
+        el: '.steps__scrollbar',
+        draggable: true,
+    }, 
+    navigation: {
+        nextEl: ".steps__nav .next",
+        prevEl: ".steps__nav .prev",
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 22,
+        },
+        1099: {
+            slidesPerView: 3,
+            spaceBetween: 22,
+        },
+    }
+})

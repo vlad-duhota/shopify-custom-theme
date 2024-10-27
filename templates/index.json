@@ -320,6 +320,15 @@
       "settings": {
         "title": "Actual tips from the guide"
       }
+    },
+    "cta_CMgLHF": {
+      "type": "cta",
+      "settings": {
+        "image": "shopify://shop_images/image_1.png",
+        "title": "Ultimate Kids' Birthday Party Planning Guide",
+        "button_text": "Get the Guide!",
+        "button_link": "https://google.com"
+      }
     }
   },
   "order": [
@@ -327,6 +336,7 @@
     "guide_Nk7nYw",
     "inside_UfFK7g",
     "themes_77KaFc",
-    "trips_cDdnYx"
+    "trips_cDdnYx",
+    "cta_CMgLHF"
   ]
 }

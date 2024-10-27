@@ -4,11 +4,11 @@
     <div class="container steps__container">
         <ul class="steps__list">
             <li class="steps__item">
-                <h2 class="steps__title"></h2>
+                <h2 class="steps__title">{{ section.settings.title }}</h2>
             </li>
 
             <li class="steps__item">
-                <a href="" class="steps__item-btn btn-primary"></a>
+                <a href="{{ section.settings.button_link }}" class="steps__item-btn btn-primary">{{ section.settings.button_text }}</a>
             </li>
         </ul>
     </div>
@@ -41,8 +41,8 @@
     ],
     "blocks": [
         {
-            "type": "slide",
-            "name": "Slide",
+            "type": "item",
+            "name": "List item",
             "settings": [
                 {
                     "id": "text",

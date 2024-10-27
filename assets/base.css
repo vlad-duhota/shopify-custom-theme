@@ -104,4 +104,21 @@ body {
   color: #fff
 }
 
+.btn-outline {
+  padding: 18.5px 20px;
+  min-width: 308px;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: background .3s ease-in-out, color .3s ease-in-out
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #216f6d;
+}
+
 /*# sourceMappingURL=global.css.map */

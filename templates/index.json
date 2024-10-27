@@ -329,6 +329,81 @@
         "button_text": "Get the Guide!",
         "button_link": "https://google.com"
       }
+    },
+    "steps_68HKhP": {
+      "type": "steps",
+      "blocks": {
+        "item_dXNczN": {
+          "type": "item",
+          "settings": {
+            "title": "Upcoming Birthday",
+            "text": "<p>Got a birthday coming up? Don't stress! We have you covered! Start planning now.</p>",
+            "image": "shopify://shop_images/baby-girl-birthday-party-decorated-with-black-golden-balloon.jpg"
+          }
+        },
+        "item_kY6FLQ": {
+          "type": "item",
+          "settings": {
+            "title": "Download Our Guide",
+            "text": "<p>Download our easy-to-follow guide packed with creative ideas, step-by-step planning, and tips to make your party memorable.</p>",
+            "image": "shopify://shop_images/image_9.jpg"
+          }
+        },
+        "item_XfeyXx": {
+          "type": "item",
+          "settings": {
+            "title": "Host an  Unforgettable Party!",
+            "text": "<p>Follow our guide, relax, and watch the magic unfold as your child’s birthday becomes an unforgettable memory.</p>",
+            "image": "shopify://shop_images/sxsxs.jpg"
+          }
+        },
+        "item_KX8YGF": {
+          "type": "item",
+          "settings": {
+            "title": "Upcoming Birthday",
+            "text": "<p>Got a birthday coming up? Don't stress! We have you covered! Start planning now.</p>",
+            "image": "shopify://shop_images/image_10.jpg"
+          }
+        },
+        "item_BQxewM": {
+          "type": "item",
+          "settings": {
+            "title": "Download Our Guide",
+            "text": "<p>Download our easy-to-follow guide packed with creative ideas, step-by-step planning, and tips to make your party memorable.</p>",
+            "image": "shopify://shop_images/image_11.jpg"
+          }
+        },
+        "item_EYVybU": {
+          "type": "item",
+          "settings": {
+            "title": "Host an  Unforgettable Party!",
+            "text": "<p>Follow our guide, relax, and watch the magic unfold as your child’s birthday becomes an unforgettable memory.</p>",
+            "image": "shopify://shop_images/image_12.jpg"
+          }
+        },
+        "item_N9N9JG": {
+          "type": "item",
+          "settings": {
+            "title": "Upcoming Birthday",
+            "text": "<p>Got a birthday coming up? Don't stress! We have you covered! Start planning now.</p>",
+            "image": "shopify://shop_images/image_13.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_dXNczN",
+        "item_kY6FLQ",
+        "item_XfeyXx",
+        "item_KX8YGF",
+        "item_BQxewM",
+        "item_EYVybU",
+        "item_N9N9JG"
+      ],
+      "settings": {
+        "title": "Your Simple Path to an Unforgettable Party",
+        "button_text": "Buy now",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -337,6 +412,7 @@
     "inside_UfFK7g",
     "themes_77KaFc",
     "trips_cDdnYx",
-    "cta_CMgLHF"
+    "cta_CMgLHF",
+    "steps_68HKhP"
   ]
 }

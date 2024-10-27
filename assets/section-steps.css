@@ -1,7 +1,100 @@
 .steps {
     padding-top: 120px;
+    background: #F7F7F7;
 }
 
 .steps__title {
-    
-}
+    text-align: center;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 34px 20px;
+    font-size: 32px;
+    color: #514b46
+  }
+  
+  .steps__title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #acacac;
+    left: 0;
+    bottom: 0
+  }
+  
+  @media(max-width: 576px) {
+    .steps__title {
+      font-size: 26px
+    }
+  }
+
+  .steps__swiper {
+    margin-top: 16px;
+  }
+
+  .steps__scrollbar {
+    height: 4px;
+    margin-top: 50px;
+    border-radius: 15px;
+    background: rgba(81, 75, 70, .3)
+  }
+  
+  @media(max-width: 576px) {
+    .steps__scrollbar {
+      margin-top: 30px
+    }
+  }
+  
+  .steps__scrollbar .swiper-scrollbar-drag {
+    height: 6px;
+    position: relative;
+    top: -1px;
+    border-radius: 37px;
+    background: #216f6d
+  }
+  
+  .steps__nav {
+    display: flex;
+    justify-content: center;
+    gap: 37px;
+    margin-top: 40px
+  }
+  
+  @media(max-width: 576px) {
+    .steps__nav {
+      margin-top: 20px
+    }
+  }
+  
+  .steps__nav-btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: #216f6d;
+    transition: background .3s ease-in-out
+  }
+  
+  .steps__nav-btn svg path {
+    transition: fill .3s ease-in-out;
+    fill: #fff
+  }
+  
+  .steps__nav-btn[disabled] {
+    background: rgba(0, 0, 0, 0)
+  }
+  
+  .steps__nav-btn[disabled] svg path {
+    fill: #514b46
+  }
+  
+  .steps__item {
+
+  }

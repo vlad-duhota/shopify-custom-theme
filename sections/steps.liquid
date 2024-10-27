@@ -7,6 +7,23 @@
                 <h2 class="steps__title">{{ section.settings.title }}</h2>
             </li>
 
+            {% for block in section.blocks %}  
+                {% case block.type %}
+              
+                  {% when 'item' %}  
+                    <li class="steps__item" {{ block.shopify_attributes }}>
+                        {{ block.settings.image | image_url: width: 1500 | image_tag:
+                        width: block.settings.image.width,
+                        class: 'steps__item-img',
+                        alt: block.settings.image.alt | escape }} 
+                        <h3 class="steps__item-title">{{ block.settings.title }}</h3>
+                        <div class="steps__item-text">
+                            {{ block.settings.text }}
+                        </div>
+                    </li>
+                {% endcase %} 
+            {% endfor %}
+
             <li class="steps__item">
                 <a href="{{ section.settings.button_link }}" class="steps__item-btn btn-primary">{{ section.settings.button_text }}</a>
             </li>
@@ -45,7 +62,7 @@
             "name": "List item",
             "settings": [
                 {
-                    "id": "text",
+                    "id": "title",
                     "type": "text",
                     "label": "Item title"
                 },

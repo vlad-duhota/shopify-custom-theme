@@ -10,9 +10,11 @@
               
                   {% when 'item' %}  
                     <div class="steps__item swiper-slide" {{ block.shopify_attributes }}>
-                        <h3 class="steps__item-title">{{ block.settings.title }}</h3>
-                        <div class="steps__item-text">
-                            {{ block.settings.text }}
+                        <div class="steps__item-content">
+                            <h3 class="steps__item-title">{{ block.settings.title }}</h3>
+                            <div class="steps__item-text">
+                                {{ block.settings.text }}
+                            </div>
                         </div>
                             {{ block.settings.image | image_url: width: 1500 | image_tag:
                             width: block.settings.image.width,

@@ -1,0 +1,19 @@
+
+
+.cta {
+    padding-top: 120px;
+}
+
+.cta__inner {
+    background: #216F6D;
+    padding: 86px 80px;
+    position: relative;
+}
+
+.cta__content {
+    max-width: 408px;
+}
+
+.cta__btn {
+    margin-top: 40px;
+}

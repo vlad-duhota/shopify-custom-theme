@@ -4,10 +4,8 @@
 }
 
 .steps__title {
-    text-align: center;
     max-width: 400px;
     display: block;
-    margin: 0 auto;
     position: relative;
     padding: 0 34px 20px;
     font-size: 32px;
@@ -96,11 +94,14 @@
   }
   
   .steps__item {
-
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
   }
 
   .steps__item-content {
     padding-left: 90px;
+    padding-bottom: 40px;
   }
 
   .steps__item-title {
@@ -114,10 +115,10 @@
     color: #393636;
   }
 
-  .steps-item-img {
+  .steps__item-img {
     display: block;
     width: 100%;
     height: 214px;
     object-fit: cover;
-    margin-top: 41px;
+    margin-top: auto;
   }

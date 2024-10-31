@@ -59,7 +59,6 @@
   .image-comparison__slider-wrapper .image-comparison__range:focus ~ .image-comparison__slider .image-comparison__thumb,
   .image-comparison__slider-wrapper .image-comparison__range--active ~ .image-comparison__slider .image-comparison__thumb {
     transform: scale(0.8);
-    background-color: rgba(var(--brand-blue-mid), 0.5);
   }
   
   .image-comparison__image-wrapper--overlay {

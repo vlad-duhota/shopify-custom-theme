@@ -108,7 +108,7 @@
   }
   .steps__item::before {
     counter-increment: steps;
-    content: counter("steps");
+    content: counter(steps);
     position: absolute;
     display: block;
     left: 0;

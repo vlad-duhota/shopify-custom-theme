@@ -99,8 +99,10 @@
     flex-direction: column;
   }
 
-  .steps__item {
+  .steps__swiper {
     counter-reset: "steps";
+  }
+  .steps__item {
     position: relative;
     padding-top: 88px;
   }

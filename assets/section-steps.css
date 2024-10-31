@@ -100,14 +100,14 @@
   }
 
   .steps__swiper {
-    counter-reset: "steps";
+    counter-reset: steps;
   }
   .steps__item {
     position: relative;
     padding-top: 88px;
   }
   .steps__item::before {
-    counter-increment: "steps";
+    counter-increment: steps;
     content: counter("steps");
     position: absolute;
     display: block;

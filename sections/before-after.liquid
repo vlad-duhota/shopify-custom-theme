@@ -1,0 +1,47 @@
+<div class="before-after">
+    <div class="container">
+        <div class="before-after__img">
+            {{ section.settings.image_1 | image_url: width: 1500 | image_tag:
+            width: section.settings.image_1.width,
+            class: 'before-after__img_1',
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            alt: section.settings.image_1.alt | escape }}
+            {{ section.settings.image_2 | image_url: width: 1500 | image_tag:
+            width: section.settings.image_2.width,
+            class: 'before-after__img_2',
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            alt: section.settings.image_2.alt | escape }}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+    "name": "Before after",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+    "groups": ["header", "footer"]
+    },
+    "settings": [
+    {
+    "type": "image_picker",
+    "id": "image_1",
+    "label": "Image 1"
+    },
+    {
+    "type": "image_picker",
+    "id": "image_2",
+    "label": "Image 2"
+    },
+    ],
+    "presets": [
+    {
+    "name": "Before after",
+    "settings": {
+      
+    }
+    }
+    ]
+    }
+    {% endschema %}

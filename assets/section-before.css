@@ -67,6 +67,7 @@
     margin: 0;
     position: relative;
     padding-top: 66.67%;
+    height: 100%;
   }
   
   .image-comparison__figure::before {
@@ -89,6 +90,10 @@
     object-position: 0 50%;
     overflow: hidden;
     z-index: 1;
+  }
+
+  .image-comparison__image_1{
+    z-index: 2;
   }
   
   .image-comparison__caption {

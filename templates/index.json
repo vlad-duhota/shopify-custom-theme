@@ -400,9 +400,14 @@
         "item_N9N9JG"
       ],
       "settings": {
-        "title": "Your Simple Path to an Unforgettable Party",
-        "button_text": "Buy now",
-        "button_link": ""
+        "title": "Your Simple Path to an Unforgettable Party"
+      }
+    },
+    "before_after_kEpjYQ": {
+      "type": "before-after",
+      "settings": {
+        "image_1": "shopify://shop_images/IMG_1860.jpg",
+        "image_2": "shopify://shop_images/IMG_1877.jpg"
       }
     }
   },
@@ -413,6 +418,7 @@
     "themes_77KaFc",
     "trips_cDdnYx",
     "cta_CMgLHF",
-    "steps_68HKhP"
+    "steps_68HKhP",
+    "before_after_kEpjYQ"
   ]
 }

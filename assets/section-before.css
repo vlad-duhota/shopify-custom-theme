@@ -106,6 +106,7 @@
   
   .image-comparison__caption {
     position: absolute;
+    z-index: 3;
     bottom: 12px;
     min-width: max-content;
     display: flex;

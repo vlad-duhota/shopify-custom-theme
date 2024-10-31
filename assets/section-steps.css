@@ -99,6 +99,25 @@
     flex-direction: column;
   }
 
+  .steps__item {
+    counter-reset: "steps";
+    position: relative;
+    padding-top: 88px;
+  }
+  .steps__item::before {
+    counter-increment: "steps";
+    content: counter("steps");
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    color: rgba(33, 111, 109, 0.18);
+    font-size: 250px;
+    font-weight: 600;
+    font-family: "DM Sans";
+    line-height: 1;
+  }
+
   .steps__item-content {
     padding-left: 90px;
     padding-bottom: 40px;

@@ -1,0 +1,65 @@
+{{ 'section-sneak.css' | asset_url | stylesheet_tag }}
+
+<div class="sneak">
+    <div class="container sneak__container">
+        <h2 class="sneak__title">{{ section.settings.title }}</h2>
+        <div class="text sneak__text">{{ section.settings.text }}</div>
+        <div class="sneak__list">
+            {% for block in section.blocks %}  
+                {% case block.type %}
+              
+                  {% when 'item' %}  
+                    <div class="sneak__item" {{ block.shopify_attributes }}>
+                     
+                            {{ block.settings.image | image_url: width: 1500 | image_tag:
+                            width: block.settings.image.width,
+                            class: 'sneak__item-img',
+                            alt: block.settings.image.alt | escape }} 
+                    </div>
+                {% endcase %} 
+            {% endfor %}
+            </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+    "name": "Steps",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+    "groups": ["header", "footer"]
+    },
+    "max_blocks": 4,
+    "settings": [
+    {
+    "type": "text",
+    "id": "title",
+    "label": "Title"
+    },
+    {
+        "id": "text",
+        "type": "richtext",
+        "label": "Text"
+    },
+    ],
+    "blocks": [
+        {
+            "type": "item",
+            "name": "List item",
+            "settings": [
+                {
+                    "id": "image",
+                    "type": "image_picker",
+                    "label": "Item image"
+                },
+            ]
+        },
+    ],
+    "presets": [
+        {
+            "name": "Sneak peek",
+        }
+    ]
+    }
+    {% endschema %}

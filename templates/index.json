@@ -403,6 +403,45 @@
         "title": "Your Simple Path to an Unforgettable Party"
       }
     },
+    "sneak_peek_jXCwLD": {
+      "type": "sneak-peek",
+      "blocks": {
+        "item_HwrrXH": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/image_14.jpg"
+          }
+        },
+        "item_n4mDpG": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/image_15.jpg"
+          }
+        },
+        "item_qiXtXU": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/image_16.jpg"
+          }
+        },
+        "item_DGj3BF": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Frame_130.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_HwrrXH",
+        "item_n4mDpG",
+        "item_qiXtXU",
+        "item_DGj3BF"
+      ],
+      "settings": {
+        "title": "Sneak Peek",
+        "text": "<p>In our Ultimate Kids' Birthday Party Planning Guide, you'll discover a curated selection of creative birthday themes, expert tips, and unique ideas specifically designed for 1st, 2nd, and 3rd birthday celebrations. Whether you’re looking to plan an unforgettable backyard bash or an indoor adventure, our guide provides step-by-step party planning templates, fun activity suggestions, and detailed party décor inspiration to help you organize an event that’s memorable, engaging, and perfectly tailored to your child’s special day.</p>"
+      }
+    },
     "before_after_kEpjYQ": {
       "type": "before-after",
       "settings": {
@@ -419,6 +458,7 @@
     "trips_cDdnYx",
     "cta_CMgLHF",
     "steps_68HKhP",
+    "sneak_peek_jXCwLD",
     "before_after_kEpjYQ"
   ]
 }

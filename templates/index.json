@@ -496,6 +496,12 @@
         "title": "Real Parties, Real Inspiration",
         "text": "<p>See how parents have used our guide to create unforgettable 1st, 2nd, and 3rd birthday celebrations.</p>"
       }
+    },
+    "product_custom_DrF3bh": {
+      "type": "product-custom",
+      "settings": {
+        "product": "ultimate-kids-birthday-party-planning-guide"
+      }
     }
   },
   "order": [
@@ -509,6 +515,7 @@
     "sneak_peek_jXCwLD",
     "cta_2_WMenUV",
     "before_after_kEpjYQ",
-    "real_inspiration_tnYpJ9"
+    "real_inspiration_tnYpJ9",
+    "product_custom_DrF3bh"
   ]
 }

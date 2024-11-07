@@ -42,9 +42,23 @@
 }
 
 .product-custom__quantity {
-    margin-top: auto;
+    width: 170px;
+    height: 58px;
+    border-radius: 5px;
+    border: 1px solid rgba(81, 75, 70, 0.10);
 }
 
 .product-custom__button {
     margin-top: 35px;
+    width: 100%;
+    background: #514B46;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.product-custom__cols {
+    margin-top: auto;
+    gap: 20px;
 }

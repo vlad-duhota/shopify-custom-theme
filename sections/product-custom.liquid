@@ -4,6 +4,7 @@
 
 <section id="product-custom-section" class="product-custom">
   {% if section.settings.product %}
+    {{ section.settings.product | json }}
     <div class="product">
       <!-- Product Image -->
       <div class="product-image">

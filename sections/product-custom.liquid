@@ -6,20 +6,18 @@
   {% assign product = all_products[section.settings.product] %}
 
   {% if product %}
-    <div class="product">
+    <div class="container">
       <!-- Product Image -->
-      <div class="product-image">
-        <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}" />
-      </div>
+      <img class="product-custom__image" src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}" />
 
       <!-- Product Title -->
-      <h2 class="product-title">{{ product.title }}</h2>
+      <h2 class="product-custom__title">{{ product.title }}</h2>
 
       <!-- Product Price -->
-      <p class="product-price">{{ product.price | money }}</p>
+      <p class="product-custom__price">{{ product.price | money }}</p>
 
       <!-- Product Description -->
-      <div class="product-description">
+      <div class="product-custom__description">
         <p>{{ product.description | strip_html | truncate: 150 }}</p> <!-- Adjust length as needed -->
       </div>
 

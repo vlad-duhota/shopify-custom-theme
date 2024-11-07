@@ -58,9 +58,21 @@
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    width: 20px;
+    margin-top: 3px;
     border: none;
     outline: none;
+    
+}
+
+.product-custom__quantity input::-webkit-outer-spin-button,
+.product-custom__quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.product-custom__quantity input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .product-custom__quantity-button {
@@ -69,6 +81,10 @@
     border: none;
     width: 12px;
     height: 12px;
+}
+
+.product-custom__quantity-button#quantity-decrease {
+    margin-bottom: 6px;
 }
 
 .product-custom__button {

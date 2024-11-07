@@ -1,0 +1,100 @@
+{% comment %}
+  Product Custom Section
+{% endcomment %}
+
+<section id="product-custom-section" class="product-custom">
+  {% if section.settings.product %}
+    <div class="product">
+      <!-- Product Image -->
+      <div class="product-image">
+        <img src="{{ section.settings.product.featured_image | img_url: 'large' }}" alt="{{ section.settings.product.title }}" />
+      </div>
+
+      <!-- Product Title -->
+      <h2 class="product-title">{{ section.settings.product.title }}</h2>
+
+      <!-- Product Price -->
+      <p class="product-price">{{ section.settings.product.price | money }}</p>
+
+      <!-- Product Description -->
+      <div class="product-description">
+        <p>{{ section.settings.product.description | strip_html | truncate: 150 }}</p> <!-- Adjust length as needed -->
+      </div>
+
+      <!-- Quantity Selector -->
+      <div class="quantity-selector">
+        <button class="quantity-button" id="quantity-decrease">-</button>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" max="{{ section.settings.product.variants.first.inventory_quantity }}" />
+        <button class="quantity-button" id="quantity-increase">+</button>
+      </div>
+
+      <!-- Purchase Button -->
+      <button id="purchase-button" class="purchase-button">
+        Buy Now
+      </button>
+    </div>
+  {% else %}
+    <p>No product found. Please assign a product to this section.</p>
+  {% endif %}
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const quantityInput = document.getElementById("quantity");
+    const decreaseButton = document.getElementById("quantity-decrease");
+    const increaseButton = document.getElementById("quantity-increase");
+    const purchaseButton = document.getElementById("purchase-button");
+
+    // Handle quantity decrease
+    decreaseButton.addEventListener("click", function() {
+      let quantity = parseInt(quantityInput.value);
+      if (quantity > 1) {
+        quantityInput.value = quantity - 1;
+      }
+    });
+
+    // Handle quantity increase
+    increaseButton.addEventListener("click", function() {
+      let quantity = parseInt(quantityInput.value);
+      if (quantity < {{ section.settings.product.product.variants.first.inventory_quantity }}) {
+        quantityInput.value = quantity + 1;
+      }
+    });
+
+    // Handle purchase button click
+    purchaseButton.addEventListener("click", function() {
+      const quantity = parseInt(quantityInput.value);
+      const productId = "{{ section.settings.product.product.id }}";
+      const variantId = "{{ section.settings.product.product.variants.first.id }}";
+      
+      // Redirect to checkout with specified quantity
+      window.location.href = `/cart/${variantId}:${quantity}`;
+    });
+  });
+</script>
+
+{% schema %}
+  {
+  "name": "Product custom",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+  "groups": ["header", "footer"]
+  },
+  "settings": [
+  {
+  "type": "product",
+  "id": "product",
+  "label": "Product"
+  },
+  ],
+  "presets": [
+  {
+  "name": "Product custom",
+  "settings": {
+    
+  }
+  }
+  ],
+  }
+  {% endschema %}

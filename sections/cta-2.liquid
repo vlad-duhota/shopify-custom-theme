@@ -1,3 +1,24 @@
+<div class="cta2">
+    {{ section.settings.image | image_url: width: 1500 | image_tag:
+    width: section.settings.image.width,
+    class: 'cta2__img',
+    widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+    alt: section.settings.image.alt | escape }}
+
+    <div class="cta2__container container">
+        <div class="cta2__inner">
+            <div class="cta2__content">
+                <h2 class="cta2__title">{{ section.settings.title  }}</h2>
+                <div class="text cta2__text">
+                    {{section.settings.text}}
+                </div>
+            </div>
+
+            <a href="{{section.settings.button_link}}" class="cta2__btn btn-light">{{section.settings.button_text}}</a>
+        </div>
+    </div>
+</div>
+
 {% schema %}
     {
     "name": "CTA 2",

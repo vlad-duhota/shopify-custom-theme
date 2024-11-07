@@ -26,7 +26,7 @@
       <!-- Quantity Selector -->
       <div class="quantity-selector">
         <button class="quantity-button" id="quantity-decrease">-</button>
-        <input type="number" id="quantity" name="quantity" value="1" min="1" max="{{ product.inventory_quantity }}" />
+        <input type="number" id="quantity" name="quantity" value="1" min="1" />
         <button class="quantity-button" id="quantity-increase">+</button>
       </div>
 
@@ -49,13 +49,11 @@
 
     // Update quantity based on button click
     function changeQuantity(amount) {
-      const currentQuantity = parseInt(quantityInput.value);
-      const maxQuantity = {{ product.variants.first.inventory_quantity }};
+      const currentQuantity = parseInt(quantityInput.value)
       let newQuantity = currentQuantity + amount;
 
       // Clamp the quantity to be between 1 and the available inventory
       if (newQuantity < 1) newQuantity = 1;
-      if (newQuantity > maxQuantity) newQuantity = maxQuantity;
 
       quantityInput.value = newQuantity;
     }

@@ -1,20 +1,26 @@
-{{ 'section-trips.css' | asset_url | stylesheet_tag }}
+{{ 'section-inspiration.css' | asset_url | stylesheet_tag }}
 
-<div class="trips">
-    <div class="container trips__container">
-        <h2 class="trips__title">{{ section.settings.title }}</h2>
+<div class="inspiration">
+    <div class="container inspiration__container">
+        <h2 class="inspiration__title">{{ section.settings.title }}</h2>
+        <div class="inspiration__text text">
+            {{ section.settings.text }}
+        </div>
 
-        <ul class="trips__list">
+        <ul class="inspiration__list">
             {% for block in section.blocks %}  
                 {% case block.type %}
               
                   {% when 'item' %}  
-                    <li class="trips__item" {{ block.shopify_attributes }}>
+                    <li class="inspiration__item" {{ block.shopify_attributes }}>
                         {{ block.settings.image | image_url: width: 1500 | image_tag:
                         width: block.settings.image.width,
-                        class: 'trips__item-img',
+                        class: 'inspiration__item-img',
                         alt: block.settings.image.alt | escape }} 
-                        <h3 class="trips__item-title">{{ block.settings.text }}</h3>
+                        <h3 class="inspiration__item-title">{{ block.settings.title }}</h3>
+                        <div class="text inspiration__item-text">
+                            {{ block.settings.text }}
+                        </div>
                     </li>
                 {% endcase %} 
             {% endfor %}
@@ -25,7 +31,7 @@
 
 {% schema %}
     {
-    "name": "Tips",
+    "name": "Real inspiration",
     "tag": "section",
     "class": "section",
     "disabled_on": {
@@ -37,10 +43,15 @@
     "id": "title",
     "label": "Title"
     },
+    {
+    "type": "richtext",
+    "id": "text",
+    "label": "Text"
+    },
     ],
     "presets": [
     {
-    "name": "Tips",
+    "name": "Real inspiration",
     "settings": {
       
     }
@@ -52,8 +63,13 @@
             "name": "Item",
             "settings": [
                 {
-                    "id": "text",
+                    "id": "title",
                     "type": "text",
+                    "label": "Item Title"
+                },
+                {
+                    "id": "text",
+                    "type": "richtext",
                     "label": "Item Text"
                 },
                 {

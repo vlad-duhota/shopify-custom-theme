@@ -84,6 +84,7 @@
     border: none;
     width: 12px;
     height: 12px;
+    cursor: pointer;
 }
 
 .product-custom__quantity-button#quantity-decrease {

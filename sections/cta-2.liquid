@@ -1,12 +1,14 @@
-<div class="cta2">
-    {{ section.settings.image | image_url: width: 1500 | image_tag:
-    width: section.settings.image.width,
-    class: 'cta2__img',
-    widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-    alt: section.settings.image.alt | escape }}
+{{ 'section-cta2.css' | asset_url | stylesheet_tag }}
 
+
+<div class="cta2">
     <div class="cta2__container container">
         <div class="cta2__inner">
+            {{ section.settings.image | image_url: width: 1500 | image_tag:
+            width: section.settings.image.width,
+            class: 'cta2__img',
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            alt: section.settings.image.alt | escape }}
             <div class="cta2__content">
                 <h2 class="cta2__title">{{ section.settings.title  }}</h2>
                 <div class="text cta2__text">

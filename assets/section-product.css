@@ -11,6 +11,8 @@
 .product-custom__content {
     flex: 1 0 506px;
     padding-left: 80px;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-custom__container {

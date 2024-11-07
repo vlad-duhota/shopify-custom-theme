@@ -56,7 +56,7 @@
     // Handle quantity increase
     increaseButton.addEventListener("click", function() {
       let quantity = parseInt(quantityInput.value);
-      if (quantity < {{ section.settings.product.variants.first.inventory_quantity }}) {
+      if (quantity < {{ section.settings.product.inventory_quantity }}) {
         quantityInput.value = quantity + 1;
       }
     });

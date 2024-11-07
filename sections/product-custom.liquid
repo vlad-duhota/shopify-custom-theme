@@ -20,16 +20,18 @@
         </div>
 
         <!-- Quantity Selector -->
-        <div class="product-custom__quantity">
-          <button class="product-custom__quantity-button" id="quantity-decrease">-</button>
-          <input type="number" id="quantity" name="quantity" value="1" min="1" />
-          <button class="product-custom__quantity-button" id="quantity-increase">+</button>
-        </div>
-
-        <!-- Purchase Button -->
-        <button id="purchase-button" class="product-custom__button">
-          Buy Now
-        </button>
+         <div class="product-custom__cols">
+           <div class="product-custom__quantity">
+             <button class="product-custom__quantity-button" id="quantity-decrease">-</button>
+             <input type="number" id="quantity" name="quantity" value="1" min="1" />
+             <button class="product-custom__quantity-button" id="quantity-increase">+</button>
+           </div>
+   
+           <!-- Purchase Button -->
+           <button id="purchase-button" class="product-custom__button">
+              Buy Now with Shop Pay
+           </button>
+         </div>
       </div>
     </div>
   {% else %}

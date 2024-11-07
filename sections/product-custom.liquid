@@ -4,7 +4,7 @@
   {% assign product = all_products[section.settings.product] %}
 
   {% if product %}
-    <div class="container">
+    <div class="container product-custom__container">
       <!-- Product Image -->
       <img class="product-custom__image" src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}" />
       <div class="product-custom__content">

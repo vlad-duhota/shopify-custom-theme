@@ -1,0 +1,39 @@
+.product-custom {
+    
+}
+
+.product-custom__img {
+    flex: 1 1 100%;
+    display: block;
+    height: auto;
+}
+
+.product-custom__content {
+    flex: 1 0 506px;
+    padding-left: 80px;
+}
+
+.product-custom__container {
+    display: flex;
+    align-items: center;
+}
+
+.product-custom__title {
+    font-size: 32px;
+    color: #514B46;
+}
+
+
+.product-custom__price {
+    font-size: 32px;
+    line-height: 160%;
+    margin-top: 20px;
+}
+
+.product-custom__text {
+
+}
+
+.product-custom__description {
+    
+}

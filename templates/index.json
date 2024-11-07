@@ -458,6 +458,44 @@
         "image_1": "shopify://shop_images/IMG_1860.jpg",
         "image_2": "shopify://shop_images/IMG_1877.jpg"
       }
+    },
+    "real_inspiration_tnYpJ9": {
+      "type": "real-inspiration",
+      "blocks": {
+        "item_nkGCir": {
+          "type": "item",
+          "settings": {
+            "title": "1st Birthday",
+            "text": "<p>When setting up a play area for your little ones, choosing the right surface is crucial for both safety and comfort. Parents often debate between baby foam mats and traditional rugs. Each has its...</p>",
+            "image": "shopify://shop_images/1.jpg"
+          }
+        },
+        "item_HmCxpi": {
+          "type": "item",
+          "settings": {
+            "title": "2nd Birthday",
+            "text": "<p>When setting up a play area for your little ones, choosing the right surface is crucial for both safety and comfort. Parents often debate between baby foam mats and traditional rugs. Each has its...</p>",
+            "image": "shopify://shop_images/0a436c12afcf728dd23394f70527223c.jpg"
+          }
+        },
+        "item_zW9C7M": {
+          "type": "item",
+          "settings": {
+            "title": "3rd Birthday",
+            "text": "<p>When setting up a play area for your little ones, choosing the right surface is crucial for both safety and comfort. Parents often debate between baby foam mats and traditional rugs. Each has its...</p>",
+            "image": "shopify://shop_images/e86cfa2935407a568ccb57995c19fd29.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_nkGCir",
+        "item_HmCxpi",
+        "item_zW9C7M"
+      ],
+      "settings": {
+        "title": "Real Parties, Real Inspiration",
+        "text": "<p>See how parents have used our guide to create unforgettable 1st, 2nd, and 3rd birthday celebrations.</p>"
+      }
     }
   },
   "order": [
@@ -470,6 +508,7 @@
     "steps_68HKhP",
     "sneak_peek_jXCwLD",
     "cta_2_WMenUV",
-    "before_after_kEpjYQ"
+    "before_after_kEpjYQ",
+    "real_inspiration_tnYpJ9"
   ]
 }

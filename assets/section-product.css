@@ -42,10 +42,34 @@
 }
 
 .product-custom__quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 170px;
     height: 58px;
     border-radius: 5px;
     border: 1px solid rgba(81, 75, 70, 0.10);
+}
+
+.product-custom__quantity input {
+    background: transparent;
+    height: 18px;
+    padding: 0;
+    color: #514B46;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    width: 40px;
+    outline: none;
+}
+
+.product-custom__quantity-button {
+    display: block;
+    background: transparent;
+    border: none;
+    width: 12px;
+    height: 12px;
 }
 
 .product-custom__button {

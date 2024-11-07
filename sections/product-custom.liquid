@@ -1,6 +1,4 @@
-{% comment %}
-  Product Custom Section
-{% endcomment %}
+{{ 'section-steps.css' | asset_url | stylesheet_tag }}
 
 <section id="product-custom-section" class="product-custom">
   {% assign product = all_products[section.settings.product] %}
@@ -9,29 +7,30 @@
     <div class="container">
       <!-- Product Image -->
       <img class="product-custom__image" src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}" />
+      <div class="product-custom__content">
+        <!-- Product Title -->
+        <h2 class="product-custom__title">{{ product.title }}</h2>
 
-      <!-- Product Title -->
-      <h2 class="product-custom__title">{{ product.title }}</h2>
+        <!-- Product Price -->
+        <p class="product-custom__price">{{ product.price | money }}</p>
 
-      <!-- Product Price -->
-      <p class="product-custom__price">{{ product.price | money }}</p>
+        <!-- Product Description -->
+        <div class="product-custom__description">
+          <p>{{ product.description | strip_html | truncate: 150 }}</p> <!-- Adjust length as needed -->
+        </div>
 
-      <!-- Product Description -->
-      <div class="product-custom__description">
-        <p>{{ product.description | strip_html | truncate: 150 }}</p> <!-- Adjust length as needed -->
+        <!-- Quantity Selector -->
+        <div class="product-custom__quantity">
+          <button class="product-custom__quantity-button" id="quantity-decrease">-</button>
+          <input type="number" id="quantity" name="quantity" value="1" min="1" />
+          <button class="product-custom__quantity-button" id="quantity-increase">+</button>
+        </div>
+
+        <!-- Purchase Button -->
+        <button id="purchase-button" class="product-custom__button">
+          Buy Now
+        </button>
       </div>
-
-      <!-- Quantity Selector -->
-      <div class="product-custom__quantity">
-        <button class="product-custom__quantity-button" id="quantity-decrease">-</button>
-        <input type="number" id="quantity" name="quantity" value="1" min="1" />
-        <button class="product-custom__quantity-button" id="quantity-increase">+</button>
-      </div>
-
-      <!-- Purchase Button -->
-      <button id="purchase-button" class="product-custom__button">
-        Buy Now
-      </button>
     </div>
   {% else %}
     <p>No product found. Please assign a valid product to this section.</p>

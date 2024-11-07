@@ -2,9 +2,10 @@
     
 }
 
-.product-custom__img {
+.product-custom__image {
     flex: 1 1 100%;
     display: block;
+    width: 100%;
     height: auto;
 }
 

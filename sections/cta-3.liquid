@@ -1,0 +1,50 @@
+{{ 'section-cta3.css' | asset_url | stylesheet_tag }}
+
+
+<div class="cta3">
+    <div class="cta3__container container">
+        <div class="cta3__inner">
+            <div class="cta3__content">
+                <h2 class="cta3__title">{{ section.settings.title  }}</h2>
+                <div class="text cta3__text">
+                    {{section.settings.text}}
+                </div>
+            </div>
+
+            <div class="cta3__form">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+    "name": "CTA 3",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+    "groups": ["header", "footer"]
+    },
+    "settings": [
+    {
+    "type": "text",
+    "id": "title",
+    "label": "Title"
+    },
+    {
+    "type": "richtext",
+    "id": "text",
+    "label": "Text"
+    },
+    ],
+    "presets": [
+    {
+    "name": "CTA 3",
+    "settings": {
+      
+    }
+    }
+    ],
+    }
+    {% endschema %}

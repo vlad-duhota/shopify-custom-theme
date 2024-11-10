@@ -12,7 +12,12 @@
             </div>
 
             <div class="cta3__form">
-                
+                {% for block in section.blocks %}
+                    {% case block.type %}
+                      {% when '@app' %}
+                        {% render block %}
+                    {% endcase %}
+                  {% endfor %}
             </div>
         </div>
     </div>
@@ -46,5 +51,10 @@
     }
     }
     ],
+    "blocks": [
+        {
+            "type": "@app"
+        }
+        ]
     }
     {% endschema %}

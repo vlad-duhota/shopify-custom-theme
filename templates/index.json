@@ -502,6 +502,35 @@
       "settings": {
         "product": "ultimate-kids-birthday-party-planning-guide"
       }
+    },
+    "cta_3_DnQQrU": {
+      "type": "cta-3",
+      "blocks": {
+        "forms_inline_krbPBQ": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "239314",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_krbPBQ"
+      ],
+      "settings": {
+        "title": "Stay Updated & Get Exclusive Tips",
+        "text": "<p>Receive party planning tips, updates, and exclusive offers straight to your inbox</p>"
+      }
     }
   },
   "order": [
@@ -516,6 +545,7 @@
     "cta_2_WMenUV",
     "before_after_kEpjYQ",
     "real_inspiration_tnYpJ9",
-    "product_custom_DrF3bh"
+    "product_custom_DrF3bh",
+    "cta_3_DnQQrU"
   ]
 }

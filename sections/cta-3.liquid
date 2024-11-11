@@ -29,6 +29,9 @@
         
             <!-- Submit Button -->
             <button type="submit">Submit</button>
+            {% if form.posted_successfully? %}
+                <p>Thank you for your message! We'll get back to you soon.</p>
+              {% endif %}
           </form>
             <div class="cta3__form">
                 {% for block in section.blocks %}

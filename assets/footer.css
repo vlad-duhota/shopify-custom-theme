@@ -1,0 +1,25 @@
+.footer {
+
+}
+
+.footer__cols {
+    padding-top: 50px;
+    border-top: 1px solid #514B46;
+    display: flex;
+}
+
+.footer__col {
+    gap: 105px;
+}
+
+.footer__col--1 {
+    flex: 1 0 34%;
+}
+
+.footer__col--2 {
+    flex: 1 0 34%;
+}
+
+.footer__col--3 {
+    flex: 1 0 34%;
+}

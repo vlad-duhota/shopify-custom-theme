@@ -33,14 +33,6 @@
                 <p>Thank you for your message! We'll get back to you soon.</p>
               {% endif %}
           </form>
-            <div class="cta3__form">
-                {% for block in section.blocks %}
-                    {% case block.type %}
-                      {% when '@app' %}
-                        {% render block %}
-                    {% endcase %}
-                  {% endfor %}
-            </div>
         </div>
     </div>
 </div>
@@ -73,10 +65,5 @@
     }
     }
     ],
-    "blocks": [
-        {
-            "type": "@app"
-        }
-        ]
     }
     {% endschema %}

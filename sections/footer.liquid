@@ -21,10 +21,10 @@
                 {% case block.type %}
                   {% when 'social_link' %}  
                     <li class="footer__socials-item">
-                      <a href="{{ block.url }}">
-                        {{ block.image | image_url: width: 29 | image_tag:
-                        width: block.image.width,
-                        alt: block.image.alt | escape }}
+                      <a href="{{ block.settings.url }}">
+                        {{ block.settings.image | image_url: width: 29 | image_tag:
+                        width: block.settings.image.width,
+                        alt: block.settings.image.alt | escape }}
                       </a>
                     </li>
                 {% endcase %} 
@@ -34,7 +34,7 @@
         </div>
         <div class="footer-privacy">
           <div class="footer-privacy__list">
-            
+
           </div>
         </div>
     </div>

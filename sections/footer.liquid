@@ -8,7 +8,13 @@
           <div class="footer__col footer__col--2">
             <h3>{{ section.settings.quick }}</h3>
 
-            {{ section.settings.quick_links | json }}
+            <ul class="footer__menu">
+              {% for link in section.settings.quick_links.links -%}
+                <li class="footer__menu-item">
+                  {{ link.title | link_to: link.url }}
+                </li>
+              {%- endfor %}
+            </ul>
           </div>
           <div class="footer__col footer__col--3">
             <h3>{{ section.settings.contact }}</h3>
@@ -33,8 +39,15 @@
           </div>
         </div>
         <div class="footer-privacy">
-          <div class="footer-privacy__list">
-
+          <ul class="footer-privacy__list">
+            {% for link in section.settings.privacy_links.links -%}
+              <li class="footer-privacy__list-item">
+                {{ link.title | link_to: link.url }}
+              </li>
+            {%- endfor %}
+          </ul>
+          <div class="footer-privacy-text">
+            <p>&copy; {{ section.settings.privacy_text }} </p>
           </div>
         </div>
     </div>

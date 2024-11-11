@@ -52,6 +52,11 @@
             <p>&copy; {{  "now" | date: '%Y' }} {{ section.settings.privacy_text }} </p>
           </div>
         </div>
+
+        {{ section.settings.image | image_url: width: 404 | image_tag:
+        width: section.settings.image.width,
+        class: 'footer__img'
+        alt: section.settings.image.alt | escape }}
     </div>
 </footer>
 

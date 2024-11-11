@@ -16,11 +16,21 @@
             <input type="hidden" name="utf8" value="✓">
         
             <!-- Email Field -->
-            <label for="contact-email">Email</label>
-            <input placeholder="Email" type="email" id="contact-email" name="contact[email]" required>
+             <div class="form-rows">
+                 <div class="form-row">
+                     <label for="contact-email">Email</label>
+                     <input placeholder="Email" type="email" id="contact-email" name="contact[email]" required>
+                 </div>
+                 <div class="form-checkbox">         
+                     <input type="checkbox" id="contact-checkbox" name="contact[agreement]" required>
+                     <label for="contact-checkbox">
+                        {{ section.settings.agreement_text }}
+                     </label>
+                 </div>
+             </div>
         
             <!-- Submit Button -->
-            <button type="submit">Subscribe Now</button>
+            <button type="submit">{{ section.settings.btn_text }}</button>
             {% if form.posted_successfully? %}
                 <p>Thank you for your message! We'll get back to you soon.</p>
               {% endif %}
@@ -47,6 +57,16 @@
     "type": "richtext",
     "id": "text",
     "label": "Text"
+    },
+    {
+    "type": "text",
+    "id": "btn_text",
+    "label": "Title"
+    },
+    {
+    "type": "richtext",
+    "id": "agreement_text",
+    "label": "Agreement text"
     },
     ],
     "presets": [

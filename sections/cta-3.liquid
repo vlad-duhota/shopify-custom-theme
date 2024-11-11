@@ -21,16 +21,17 @@
                      <label for="contact-email">Email</label>
                      <input placeholder="Email" type="email" id="contact-email" name="contact[email]" required>
                  </div>
+                 <button type="submit">{{ section.settings.btn_text }}</button>
+                 </div>
+                 
                  <div class="form-checkbox">         
                      <input type="checkbox" id="contact-checkbox" name="contact[agreement]" required>
                      <label for="contact-checkbox">
                         {{ section.settings.agreement_text }}
                      </label>
                  </div>
-             </div>
         
             <!-- Submit Button -->
-            <button type="submit">{{ section.settings.btn_text }}</button>
             {% if form.posted_successfully? %}
                 <p>Thank you for your message! We'll get back to you soon.</p>
               {% endif %}

@@ -3,6 +3,7 @@
 }
 
 .footer__img {
+    position: absolute;
     display: block;
     width: 404px;
     height: auto;

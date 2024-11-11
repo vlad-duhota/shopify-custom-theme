@@ -7,9 +7,8 @@
     background:#216F6D;
 
     display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 40px;
-    
+    grid-template-columns: 40% calc(60% - 66px);
+    gap: 66px;
 }
 
 .cta3__title {
@@ -17,6 +16,7 @@
     font-size: 32px;
     font-weight: 400;
     text-transform: capitalize;
+    max-width: 351px;
 }
 
 .cta3__text{

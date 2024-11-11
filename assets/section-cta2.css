@@ -25,6 +25,7 @@
 .cta2__title {
     font-size: 32px;
     font-weight: 400;
+    color: #fff;
 }
 
 .cta2__text {
@@ -32,6 +33,7 @@
     font-weight: 400;
     max-width: 623px;
     margin-top: 20px;
+    color: #fff;
 }
 
 .cta2__btn {

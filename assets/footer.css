@@ -1,5 +1,13 @@
-.footer {
+.footer__container {
+    position: relative;
+}
 
+.footer__img {
+    display: block;
+    width: 404px;
+    height: auto;
+    bottom: 30px;
+    right: 0;
 }
 
 .footer__cols {
@@ -49,6 +57,7 @@
 
 .footer__privacy {
     margin-top: 180px;
+    padding-bottom: 30px;
 }
 
 .footer__privacy-text {

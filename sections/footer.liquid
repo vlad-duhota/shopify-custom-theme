@@ -19,12 +19,22 @@
             <ul class="footer__socials">
               {% for block in section.blocks %}  
                 {% case block.type %}
-              
                   {% when 'social_link' %}  
-                  
+                    <li class="footer__socials-item">
+                      <a href="{{ block.url }}">
+                        {{ block.image | image_url: width: 29 | image_tag:
+                        width: block.image.width,
+                        alt: block.image.alt | escape }}
+                      </a>
+                    </li>
                 {% endcase %} 
               {% endfor %}
             </ul>
+          </div>
+        </div>
+        <div class="footer-privacy">
+          <div class="footer-privacy__list">
+            
           </div>
         </div>
     </div>

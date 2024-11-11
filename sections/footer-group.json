@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -5,45 +14,35 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-0": {
-          "type": "link_list",
+        "social_link_R9iWh8": {
+          "type": "social_link",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "image": "shopify://shop_images/Group_3.svg",
+            "url": "https://www.instagram.com/"
           }
         },
-        "footer-1": {
-          "type": "link_list",
+        "social_link_Kxgy3m": {
+          "type": "social_link",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
-          }
-        },
-        "footer-2": {
-          "type": "text",
-          "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "image": "shopify://shop_images/Vector_4.svg",
+            "url": "https://faceebook.com"
           }
         }
       },
       "block_order": [
-        "footer-0",
-        "footer-1",
-        "footer-2"
+        "social_link_R9iWh8",
+        "social_link_Kxgy3m"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "show_social": true,
-        "enable_country_selector": false,
-        "enable_language_selector": false,
-        "payment_enable": true,
-        "show_policy": false,
-        "margin_top": 48,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "title": "A Party Baby Company",
+        "text": "<p>Providing exceptional, safe, and engaging products designed to bring joy and ease to your child’s daily life.</p>",
+        "quick": "Quick Links:",
+        "quick_links": "customer-account-main-menu",
+        "contact": "Contact",
+        "contact_email": "info@partybabyseattle.com",
+        "privacy_links": "",
+        "privacy_text": "Party Baby All Rights Reserved",
+        "image": "shopify://shop_images/Group.png"
       }
     }
   },

@@ -40,16 +40,16 @@
             </ul>
           </div>
         </div>
-        <div class="footer-privacy">
-          <ul class="footer-privacy__list">
+        <div class="footer__privacy">
+          <ul class="footer__privacy-list">
             {% for link in section.settings.privacy_links.links -%}
-              <li class="footer-privacy__list-item">
+              <li>
                 {{ link.title | link_to: link.url }}
               </li>
             {%- endfor %}
           </ul>
           <div class="footer-privacy-text">
-            <p>&copy; {{ section.settings.privacy_text }} </p>
+            <p>&copy; {{  "now" | date: '%Y' }} {{ section.settings.privacy_text }} </p>
           </div>
         </div>
     </div>

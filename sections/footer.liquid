@@ -1,6 +1,32 @@
 <footer class="footer">
     <div class="container">
-        Footer
+        <div class="footer__cols">
+          <div class="footer__col footer__col--1">
+            <h3>{{ section.settings.title }}</h3>
+            <div class="text">{{ section.settings.text }}</div>
+          </div>
+          <div class="footer__col footer__col--2">
+            <h3>{{ section.settings.quick }}</h3>
+
+            {{ section.settings.quick_links | json }}
+          </div>
+          <div class="footer__col footer__col--3">
+            <h3>{{ section.settings.contact }}</h3>
+            <div class="text">
+              <a href="mailto:{{ section.settings.contact_email }}">{{ section.settings.contact_email }}</a> for injuries
+            </div>
+
+            <ul class="footer__socials">
+              {% for block in section.blocks %}  
+                {% case block.type %}
+              
+                  {% when 'social_link' %}  
+                  
+                {% endcase %} 
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
     </div>
 </footer>
 
@@ -8,10 +34,70 @@
 {
   "name": "Footer",
   "settings": [
-   
+    {
+      "id": "title",
+      "type": "text",
+      "label": "Title"
+    },
+    {
+      "id": "text",
+      "type": "richtext",
+      "label": "Text"
+    },
+    {
+      "id": "quick",
+      "type": "text",
+      "label": "Quick links"
+    },
+    {
+      "id": "quick_links",
+      "type": "link_list",
+      "label": "Quick links list"
+    },
+    {
+      "id": "contact",
+      "type": "text",
+      "label": "Contact"
+    },  
+    {
+      "id": "contact_email",
+      "type": "text",
+      "label": "Contact email"
+    },
+    {
+      "id": "privacy_links",
+      "type": "link_list",
+      "label": "Privacy links list"
+    },
+
+    {
+      "id": "privacy_text",
+      "type": "text",
+      "label": "Privacy text"
+    },
+    {
+      "id": "image",
+      "type": "image_picker",
+      "label": "Decoration image"
+    },
   ],
-  "default": {
-    "name": "Footer",
-  }
+  "blocks": [
+            {
+            "type": "social_link",
+            "name": "Social link",
+            "settings": [
+                {
+                "id": "image",
+                "type": "image_picker",
+                "label": "Social icon"
+                },
+                {
+                "id": "url",
+                "type": "url",
+                "label": "Social url"
+                },
+            ]
+            },
+    ]
 }
 {% endschema %}

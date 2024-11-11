@@ -21,3 +21,7 @@
 .cta3__text{
     margin-top: 15px;
 }
+
+.cta3 form {
+    flex-direction: row !important;
+}

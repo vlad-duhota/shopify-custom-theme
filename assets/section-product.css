@@ -101,6 +101,7 @@
     border: none;
     color: #fff;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .product-custom__cols {

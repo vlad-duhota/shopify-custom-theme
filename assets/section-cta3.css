@@ -24,9 +24,91 @@
     color: #fff;
 }
 
-.cta3 form {
-    flex-direction: row !important;
+
+.cta3 form .form-rows{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
 }
-._formContainer_stahb_30 {
-    background: #000 !important;
+
+.cta3 form .form-row input {
+    display: block;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 21px 16px;
+
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.cta3 form .form-row input::placeholder {
+    color: rgba(255, 255, 255, 0.50);
+font-family: inherit;
+font-size: 16px;
+font-weight: 400;
+line-height: 1;
+}
+
+.cta3 form button {
+    padding: 18.5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    background: #ffff;
+    color: #216F6D;
+    font-weight: 400;
+    border: none;
+}
+
+.cta3 form .form-row label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.cta3 form .form-checkbox input{
+    display: none;
+}
+
+.cta3 form .form-checkbox label {
+    position: relative;
+    padding-left: 28px;
+}
+
+.cta3 form .form-checkbox label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #fff;
+}
+
+.cta3 form .form-checkbox label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 6px;
+    top: 7px;
+    width: 6px;
+    height: 4px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.00001L3.00014 5L7 1' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cta3 form .form-checkbox input:checked + label::after {
+    opacity: 1;
 }

@@ -84,6 +84,7 @@ line-height: 1;
     position: relative;
     display: block;
     padding-left: 28px;
+    cursor: pointer;
     color: #fff;
 }
 

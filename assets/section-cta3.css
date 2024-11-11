@@ -1,0 +1,23 @@
+.cta3 {
+    padding: 120px 0 100px;
+}
+
+.cta3__inner {
+    padding: 63px 40px;
+    background:#216F6D;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 40px;
+    
+}
+
+.cta3__title {
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.cta3__text{
+    margin-top: 15px;
+}

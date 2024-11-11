@@ -84,6 +84,7 @@ line-height: 1;
     position: relative;
     display: block;
     padding-left: 28px;
+    color: #fff;
 }
 
 .cta3 form .form-checkbox label::before {

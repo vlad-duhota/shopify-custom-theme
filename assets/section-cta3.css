@@ -51,6 +51,11 @@
     text-transform: capitalize;
     max-width: 351px;
 }
+@media (max-width: 576px) {
+    .cta3__title {
+        font-size: 24px;
+    }
+}
 
 .cta3__text{
     margin-top: 15px;
@@ -63,6 +68,13 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: end;
     gap: 16px;
+    
+}
+
+@media (max-width: 768px) {
+    .cta3 form .form-rows{
+        grid-template-columns: 1fr;
+    }
 }
 
 .cta3 form .form-row input {

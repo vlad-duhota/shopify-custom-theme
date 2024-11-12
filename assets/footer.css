@@ -92,6 +92,12 @@
 .footer__privacy-text {
     margin-top: 20px;
 }
+
+@media (max-width: 576px) {
+    .footer__privacy-text p {
+        font-size: 12px;
+    }
+}
 .footer__privacy-list {
     display: flex;
     margin: 0 -15px;
@@ -99,6 +105,12 @@
 @media (max-width: 1099px) {
     .footer__privacy-list {
         justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer__privacy-list a {
+        font-size: 12px;
     }
 }
 

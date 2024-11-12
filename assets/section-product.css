@@ -26,9 +26,9 @@
     }
 }
 
-.product-custom__container {
+/* .product-custom__container {
     padding-left: 0;
-}   
+}    */
 
 .product-custom__container {
     display: flex;

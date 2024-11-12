@@ -136,9 +136,21 @@
     font-weight: 400;
     cursor: pointer;
 }
+@media (max-width: 576px) {
+    .product-custom__button {
+        font-size: 12px;
+    }   
+}
 
 .product-custom__cols {
     margin-top: auto;
     gap: 20px;
     display: flex;
+}
+
+@media (max-width: 576px) {
+    .product-custom__cols {
+        margin-top: 20px;
+
+    }
 }

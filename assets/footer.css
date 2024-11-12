@@ -148,3 +148,10 @@
         flex: 0 0 auto;
     }
 }
+
+@media (max-width: 576px) {
+    .footer__col--1, .footer__col--2, .footer__col--3 {
+        flex: 1 0 auto;
+        max-width: 100%;
+    }
+}

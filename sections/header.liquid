@@ -3,9 +3,7 @@
 
    <header class="header">
         <div class="header__container container">
-          {{ section.settings.logo | image_url: width: 1500 | image_tag:
-          width: section.settings.image.width,
-          alt: section.settings.logo.alt | escape }}
+          {{ section.settings.logo | image_url: width: 1500 | image_tag: width: section.settings.image.width, alt: section.settings.lo go.alt | escape }}
 
             <a href="{{section.settings.button_link}}" class="header__btn btn-primary">
               {{section.settings.button_text}}
